@@ -1,14 +1,15 @@
-import React from 'react'
-import { Spotlight } from './ui/Spotlight'
+"use client";
+import React from "react";
+import { WavyBackground } from "./ui/wavy-background";
 
-const Hero = () => {
+export function Hero() {
   return (
-    <div className='pb-20 pt-36'>Hero
-    <Spotlight className='top-40 left-10 md:-left:32 md:-top-20 h-screen ' fill='white'/>
-    <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple'/>
-    <Spotlight className='top-40 left-10 md:-left:32 md:-top-20 h-screen ' fill='white'/>
-    </div>
-  )
+    <WavyBackground className="max-w-4xl mx-auto pb-40">
+      <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
+        Pranav Gopinath
+      </p>
+      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+        Systems Design Engineering @Waterloo      </p>
+    </WavyBackground>
+  );
 }
-
-export default Hero
