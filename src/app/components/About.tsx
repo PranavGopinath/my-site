@@ -18,5 +18,6 @@ export const About = () => {
         feel free to take a look at my past work and experience
       </h3>
     </div>
+    
   );
 };
