@@ -14,7 +14,7 @@ export const projects = [
       "A digital adaptation of a self-improvement journal, with personalized touches to improve journalling experience",
     skills:
     "Expo, React Native, Node.js, Supabase, TailwindCSS",
-    link: "https://stripe.com",
+    link: "https://github.com/PranavGopinath/kaizen_journal",
   },
   {
     title: "TD Immersive Learning",
@@ -28,27 +28,27 @@ export const projects = [
     description:
       "A browser extension designed to boost user productivity",
     skills: "React, Cohere API, Javascript",
-    link: "https://google.com",
+    link: "https://github.com/PranavGopinath/GoosePeek",
   },
   {
     title: "EduMe",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    skills: "Python, Streamlit",
-      link: "https://meta.com",
+    skills: "Python, Streamlit, OpenAI API",
+      link: "https://github.com/PranavGopinath/edume-ai",
   },
   {
     title: "Self Balancing Robot",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
     skills: "C++, Arduino",
-      link: "https://amazon.com",
+      link: "https://github.com/PranavGopinath/Franko/tree/master",
   },
   {
     title: "Estate Eagle",
     description:
       "A real-estate price forecasting application to help homebuyers stay on top of market trends.",
     skills: "Next.js, Typescript, Node.js, Express.js, TailwindCSS", 
-      link: "https://microsoft.com",
+      link: "https://github.com/PranavGopinath/Estate-Eagle",
   },
 ];

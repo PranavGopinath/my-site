@@ -27,16 +27,20 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <Link
-          href={item?.link}
-          key={item?.link}
-          className="relative group  block p-2 h-full w-full"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
+        href={item?.link}
+        passHref
+        key={item?.link}
+        target="_blank" // Move these attributes to the Link component
+        rel="noopener noreferrer"
+        className="relative group block p-2 h-full w-full"
+        onMouseEnter={() => setHoveredIndex(idx)}
+        onMouseLeave={() => setHoveredIndex(null)}
+      >
+        <div className="h-full w-full"> {/* This div now serves as the main wrapper */}
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -55,7 +59,8 @@ export const HoverEffect = ({
             <CardDescription>{item.description}</CardDescription>
             <CardDescription>{item?.skills}</CardDescription>
           </Card>
-        </Link>
+        </div>
+      </Link>
       ))}
     </div>
   );
