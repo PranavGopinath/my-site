@@ -4,7 +4,7 @@ export function Projects() {
   return (
     <div className="px-40">
       <h1 id ="projects" className='text-white text-4xl'>Projects</h1>
-      <h3 className='text-white text-lg'>cool stuff i've built in my spare time </h3>
+      <h3 className='text-white text-lg pt-4'>cool things i've worked on in my spare time </h3>
       <HoverEffect items={projects} />
     </div>
   );

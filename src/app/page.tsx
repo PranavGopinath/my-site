@@ -12,7 +12,7 @@ import { Contact } from "./components/Contact";
 export default function Home() {
 
   return (
-    <div className="bg-black relative flex justify-center items-center flex-col overflow-auto px-5">
+    <div className="bg-black relative flex justify-center items-center flex-col overflow-auto">
       <Navbar />
       <Hero />
       <About />
