@@ -45,7 +45,7 @@ export const Navbar = () => {
           transform: translateX(0%);
         }
       `}</style>
-      <div className="bg-transparent text-white top-0 z-50 h-20 w-screen important sticky flex flex-row items-center justify-center">
+      <div className="bg-black text-white top-0 z-50 h-20 w-screen important sticky flex flex-row items-center justify-center">
         <div className="flex grow-0 w-1/12 justify-center">
           <img
             src="../favicon.ico"

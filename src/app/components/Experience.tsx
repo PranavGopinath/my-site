@@ -13,7 +13,7 @@ export const Experience = () => {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Developed and launched a business decision making tool, connecting plants across 
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -28,9 +28,9 @@ export const Experience = () => {
       ),
     },
     {
-      title: "VP Project Scoping & Software Developer",
+      title: "VP Project Scoping + Software Developer",
       company: "UW Blueprint",
-      date: "Sep 2024 - Preseet",
+      date: "Sep 2024 - Present",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
