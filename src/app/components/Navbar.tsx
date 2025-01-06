@@ -49,7 +49,7 @@ export const Navbar = () => {
         <div className="flex grow-0 w-1/12 justify-center">
           <img
             src="../favicon.ico"
-            className="h-10"
+            className="h-10 cursor-pointer"
             onClick={() => scrollToSection("home")}
           ></img>
         </div>
