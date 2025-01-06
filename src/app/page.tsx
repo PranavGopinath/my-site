@@ -6,6 +6,8 @@ import { StarsBackground } from "./components/ui/stars-background";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import {Navbar } from "./components/Navbar"
+import { Experience } from "./components/Experience";
+import { Contact } from "./components/Contact";
 
 export default function Home() {
 
@@ -14,7 +16,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
       <Projects />
+      <Contact />
       <ShootingStars />
       <StarsBackground />
       

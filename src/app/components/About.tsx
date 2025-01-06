@@ -3,8 +3,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className="px-40 pb-40 pt-20 w-full relative flex flex-col items-start justify-start">
-      {/* Radial gradient for the container to give a faded look */}
+    <div id="about" className="px-40 pb-40 pt-20 w-full relative flex flex-col items-start justify-start">
       <h1 className="text-4xl relative z-20 text-white">hey, it's nice to meet you!</h1>
       <h3 className="text-lg text-white pt-4">welcome to my site.</h3>
       <h3 className="text-lg text-white pt-4">

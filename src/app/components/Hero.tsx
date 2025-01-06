@@ -20,8 +20,8 @@ export function Hero() {
   }, [])
 
   return (
-    <div>
-    <WavyBackground className="max-w-4xl h-full mx-auto pb-20 flex flex-col">
+    <div id ="home">
+    <WavyBackground className="max-w-4xl h-full mx-auto pb-40 flex flex-col">
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-sans text-center pt-60">
         Pranav Gopinath
       </p>
