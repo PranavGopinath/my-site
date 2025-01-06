@@ -1,5 +1,19 @@
 "use client";
+import {useEffect, useState} from 'react'
+import {cn} from '@/lib/utils'
 export const Navbar = () => {
+  const [didScroll, setDidScroll] = useState<boolean>(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      setDidScroll(window.scrollY > 0);
+    }
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   function scrollToSection(sect: string): void {
     if (sect === "home") {
       window.scrollTo({
@@ -45,7 +59,14 @@ export const Navbar = () => {
           transform: translateX(0%);
         }
       `}</style>
-      <div className="bg-black text-white top-0 z-50 h-20 w-screen important sticky flex flex-row items-center justify-center">
+      <div
+        className={cn(
+          "text-white top-0 z-50 h-20 w-screen important sticky flex flex-row items-center justify-center",
+          didScroll
+            ? "bg-gradient-to-br from-transparent to-black backdrop-blur transition"
+            : "bg-transparent"
+        )}
+      >
         <div className="flex grow-0 w-1/12 justify-center">
           <img
             src="../favicon.ico"
