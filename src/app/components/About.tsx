@@ -55,7 +55,7 @@ export const About = () => {
       <div className="items-start justify-start">
       {showFirst && (
         <TextGenerateEffect
-          words={"hey, welcome to my site!"}
+          words={"Hey, welcome to my site!"}
           className="text-4xl relative z-20 text-white"
         />
       )}

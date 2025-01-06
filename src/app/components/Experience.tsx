@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Timeline } from "./ui/timeline";
-import MartinreaLogo from '@/public/martinrealogo.png'
-import BlueprintLogo from '@/public/blueprintlogo.png'
-import AllEquipLogo from '@/public/allequip.avif'
+import MartinreaLogo from "@/public/martinrealogo.png";
+import BlueprintLogo from "@/public/blueprintlogo.png";
+import AllEquipLogo from "@/public/allequip.avif";
 
 export const Experience = () => {
   const data = [
@@ -13,7 +13,12 @@ export const Experience = () => {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Developed and launched a business decision making tool, connecting plants across 
+            Developed and deployed a business decision making tool, connecting
+            25+ corporate and plant teams across Martinrea with their desired data. 
+
+          </p>
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Built a universal PLC communication app, enabling developers to connect their factory applications with any make/model of PLC. 
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -34,12 +39,12 @@ export const Experience = () => {
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            Partnering with non-profit organizations to build tech solutions,
+            catalyzing efforts to drive social impact
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Driving initiatives in collaboration with Blueprint alumni to ensure
+            sustainable re-use of delivered projects.{" "}
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -55,12 +60,14 @@ export const Experience = () => {
     },
     {
       title: "Engineering Intern",
-      company:"All Equip",
+      company: "All Equip",
       date: "Jan - Apr 2024",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Developed a fullstack application to digitize several manufacturing
+            processes including quality inspection, progress oversight, and
+            material stock management.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -76,12 +83,15 @@ export const Experience = () => {
     },
   ];
   return (
-    <div id="experience" className="px-40 pt-20 w-full relative flex flex-col items-start justify-start">
+    <div
+      id="experience"
+      className="px-40 pt-20 w-full relative flex flex-col items-start justify-start"
+    >
       <h1 className="text-4xl relative z-20 text-white">Experience</h1>
-      <h3 className="text-lg text-white pt-4">places where i've gained invaluable knowledge, and had a good time</h3>
+      <h3 className="text-lg text-white pt-4">
+        places where i've gained invaluable knowledge
+      </h3>
       <Timeline data={data} />
-
     </div>
-    
   );
 };
