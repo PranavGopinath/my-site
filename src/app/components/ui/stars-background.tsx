@@ -23,6 +23,7 @@ interface StarBackgroundProps {
   minTwinkleSpeed?: number;
   maxTwinkleSpeed?: number;
   className?: string;
+  onLoaded?: () => void;
 }
 
 export const StarsBackground: React.FC<StarBackgroundProps> = ({
@@ -32,10 +33,10 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   minTwinkleSpeed = 0.5,
   maxTwinkleSpeed = 1,
   className,
+  onLoaded
 }) => {
   const [stars, setStars] = useState<StarProps[]>([]);
-  const canvasRef: RefObject<HTMLCanvasElement> =
-    useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const generateStars = useCallback(
     (width: number, height: number): StarProps[] => {
@@ -56,26 +57,21 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         };
       });
     },
-    [
-      starDensity,
-      allStarsTwinkle,
-      twinkleProbability,
-      minTwinkleSpeed,
-      maxTwinkleSpeed,
-    ]
+    [starDensity, allStarsTwinkle, twinkleProbability, minTwinkleSpeed, maxTwinkleSpeed]
   );
 
   useEffect(() => {
     const updateStars = () => {
       if (canvasRef.current) {
         const canvas = canvasRef.current;
-        const ctx = canvas.getContext("2d");
+        const ctx = canvas.getContext('2d');
         if (!ctx) return;
 
         const { width, height } = canvas.getBoundingClientRect();
         canvas.width = width;
         canvas.height = height;
         setStars(generateStars(width, height));
+        onLoaded && onLoaded();  // Call the callback once stars are generated and canvas is sized
       }
     };
 
@@ -91,20 +87,13 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         resizeObserver.unobserve(canvasRef.current);
       }
     };
-  }, [
-    starDensity,
-    allStarsTwinkle,
-    twinkleProbability,
-    minTwinkleSpeed,
-    maxTwinkleSpeed,
-    generateStars,
-  ]);
+  }, [generateStars, onLoaded]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
     let animationFrameId: number;
@@ -137,7 +126,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className={cn("h-full w-full absolute inset-0", className)}
+      className={`h-full w-full absolute inset-0 z-0 ${className}`}
     />
   );
 };
