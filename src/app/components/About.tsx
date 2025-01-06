@@ -55,26 +55,26 @@ export const About = () => {
       <div className="items-start justify-start">
       {showFirst && (
         <TextGenerateEffect
-          words={"hey, it's nice to meet you!"}
+          words={"hey, welcome to my site!"}
           className="text-4xl relative z-20 text-white"
         />
       )}
       {showSecond && (
         <TextGenerateEffect
-          words={"welcome to my site."}
+          words={"let's get acquainted."}
           className="text-lg text-white pt-4"
         />
       )}
       {showThird && (
         <TextGenerateEffect
-          words={"i'm a problem solver, eager to innovate through constraints."}
+          words={"i'm a problem solver, always looking to innovate through constraints."}
           className="text-lg text-white pt-4"
         />
       )}
       {showFourth && (
         <TextGenerateEffect
           words={
-            "i'm passionate about building meaningful products through my work."
+            "i'm passionate about building meaningful products through my efforts."
           }
           className="text-lg text-white pt-4"
         />

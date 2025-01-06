@@ -8,6 +8,7 @@ import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import {Navbar } from "./components/Navbar"
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
+import {Footer } from './components/Footer'
 
 export default function Home() {
 
@@ -21,7 +22,7 @@ export default function Home() {
       <Contact />
       <ShootingStars />
       <StarsBackground />
-      
+      <Footer /> 
     </div>
   );
 }
