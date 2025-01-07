@@ -39,7 +39,7 @@ export const Experience = () => {
       ),
     },
     {
-      title: "VP Project Scoping + Software Developer",
+      title: "Software Developer + VP Project Scoping",
       company: "UW Blueprint",
       date: "Sep 2024 - Present",
       content: (
