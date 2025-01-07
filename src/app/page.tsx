@@ -5,8 +5,6 @@ import {About} from "./components/About";
 import {Projects} from './components/Projects'
 import { ShootingStars } from "./components/ui/shooting-stars";
 import { StarsBackground } from "./components/ui/stars-background";
-import { FloatingNav } from "./components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import {Navbar } from "./components/Navbar"
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";

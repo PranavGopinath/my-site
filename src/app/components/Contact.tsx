@@ -16,7 +16,7 @@ export const Contact = () => {
             rel="noopener noreferrer"
             className="inline-block transition-transform duration-300 transform hover:scale-110"
           >
-          <Button color="secondary" className="border-2 rounded-sm flex flex-row items-center hover:border-[#33AFFF] hover:text-[#33AFFF]">Let's touch base
+          <Button color="secondary" className="border-2 rounded-sm flex flex-row items-center hover:border-[#33AFFF] hover:text-[#33AFFF]">Let&apos;s touch base
           <Send className="hover:text-[#33AFFF]"/>
           </Button>
 

@@ -101,7 +101,7 @@ export const Experience = () => {
     >
       <h1 className="text-4xl relative z-20 text-[#33AFFF]">Experience</h1>
       <h3 className="text-lg text-white pt-4">
-        places where i've gained invaluable knowledge
+        places where i&apos;ve gained invaluable knowledge
       </h3>
       <Timeline data={data} />
     </div>
