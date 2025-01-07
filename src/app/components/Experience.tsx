@@ -3,7 +3,7 @@ import { Timeline } from "./ui/timeline";
 import MartinreaLogo from "@/public/martinrealogo.png";
 import BlueprintLogo from "@/public/blueprintlogo.png";
 import AllEquipLogo from "@/public/allequip.avif";
-import { FaReact } from "react-icons/fa";
+import { FaNode, FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { DiPostgresql } from "react-icons/di";
@@ -49,16 +49,16 @@ export const Experience = () => {
             </a>
             <div className="grid grid-cols-2 gap-4 w-1/2 items-center">
               <div className="flex justify-center">
-                <FaReact className="text-xl flex justify-center" />
+                <FaReact className="text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <SiDjango className="text-xl" />
+                <SiDjango className="text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <FaPython />
+                <FaPython className="text-6xl text-[#33AFFF]"/>
               </div>
               <div className="flex justify-center">
-                <SiCplusplus />
+                <SiCplusplus className="text-6xl text-[#33AFFF]" />
               </div>
             </div>
           </div>
@@ -81,6 +81,8 @@ export const Experience = () => {
               ensure sustainable re-use of delivered projects.{" "}
             </p>
           </div>
+          <div className="flex flex-row gap-10">
+
           <a
             href="https://www.uwblueprint.org"
             target="_blank"
@@ -93,8 +95,23 @@ export const Experience = () => {
               width={300}
               height={300}
               className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF]"
-            />
+              />
           </a>
+          <div className="grid grid-cols-2 gap-4 w-1/2 items-center">
+              <div className="flex justify-center">
+                <FaReact className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <SiTypescript className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <FaPython className="text-6xl text-[#33AFFF]"/>
+              </div>
+              <div className="flex justify-center">
+                <DiPostgresql className="text-6xl text-[#33AFFF]" />
+              </div>
+            </div>
+              </div>
         </div>
       ),
     },
@@ -103,7 +120,21 @@ export const Experience = () => {
       company: "All Equip",
       date: "Jan - Apr 2024",
       content: (
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col w-full">
+            <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
+              Developed a fullstack application to digitize several
+              manufacturing processes including quality inspection, progress
+              oversight, and material stock management.
+            </p>
+            <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
+              Configured an aluminum saw machine to automate raw material
+              cutting, exceeding the company’s objective of dealing with a 43%
+              increase in production demand.
+            </p>
+          </div>
+          <div className="flex flex-row gap-10">
+
           <a
             href="https://www.allequiprepair.ca/"
             target="_blank"
@@ -118,17 +149,20 @@ export const Experience = () => {
               className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF]"
             />
           </a>
-          <div className="flex flex-col w-1/2">
-            <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
-              Developed a fullstack application to digitize several
-              manufacturing processes including quality inspection, progress
-              oversight, and material stock management.
-            </p>
-            <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
-              Configured an aluminum saw machine to automate raw material
-              cutting, exceeding the company’s objective of dealing with a 43%
-              increase in production demand.
-            </p>
+          <div className="grid grid-cols-2 gap-4 w-1/2 items-center">
+              <div className="flex justify-center">
+                <RiNextjsLine className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <SiMongodb className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <FaNodeJs className="text-6xl text-[#33AFFF]"/>
+              </div>
+              <div className="flex justify-center">
+                <FaReact className="text-6xl text-[#33AFFF]" />
+              </div>
+            </div>
           </div>
         </div>
       ),
