@@ -13,7 +13,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="inline-block transition-transform duration-300 transform hover:scale-110"
           >
-            <FaLinkedin className="text-lg text-white" />
+            <FaLinkedin className="text-lg text-white hover:text-[#33AFFF]" />
           </a>
           <a
             href="https://www.github.com/PranavGopinath"
@@ -21,7 +21,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="inline-block transition-transform duration-300 transform hover:scale-110"
           >
-            <FaGithub className="text-lg text-white" />
+            <FaGithub className="text-lg text-white hover:text-[#33AFFF]" />
           </a>
         </div>
         <div className="text-white">
@@ -31,8 +31,8 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="inline-block transition-transform duration-300 transform hover:scale-110"
           >
-          <Button size="sm" color="secondary" className="px-2 py-1 border-2 rounded-sm flex flex-row items-center">
-          <Mail className="text-sm"/>p3gopina@uwaterloo.ca
+          <Button size="sm" color="secondary" className="px-2 py-1 border-2 hover:border-[#33AFFF] rounded-sm flex flex-row items-center hover:text-[#33AFFF]">
+          <Mail className="text-sm hover:text-[#33AFFF]"/>p3gopina@uwaterloo.ca
           </Button>
 
         </a>
