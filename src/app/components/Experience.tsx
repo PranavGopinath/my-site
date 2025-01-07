@@ -3,7 +3,7 @@ import { Timeline } from "./ui/timeline";
 import MartinreaLogo from "@/public/martinrealogo.png";
 import BlueprintLogo from "@/public/blueprintlogo.png";
 import AllEquipLogo from "@/public/allequip.avif";
-import { FaNode, FaReact } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { DiPostgresql } from "react-icons/di";
