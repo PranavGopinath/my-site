@@ -20,15 +20,19 @@ export const Experience = () => {
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Built a universal PLC communication app, enabling developers to connect their factory applications with any make/model of PLC. 
           </p>
-          <div className="grid grid-cols-2 gap-4">
+            <a
+            href="https://www.martinrea.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="z-50 inline-block transition-transform duration-300 transform hover:scale-110">
             <Image
               src={MartinreaLogo}
-              alt="startup template"
-              width={800}
-              height={800}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              alt="Martinrea"
+              width={500}
+              height={500}
+              className="z-[100] rounded-lg object-cover transition-transform duration-300 hover:scale-110"
             />
-          </div>
+            </a>
         </div>
       ),
     },
@@ -46,13 +50,13 @@ export const Experience = () => {
             Driving initiatives in collaboration with Blueprint alumni to ensure
             sustainable re-use of delivered projects.{" "}
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="">
             <Image
               src={BlueprintLogo}
-              alt="hero template"
+              alt="UW Blueprint"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
         </div>
@@ -69,13 +73,13 @@ export const Experience = () => {
             processes including quality inspection, progress oversight, and
             material stock management.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="">
             <Image
               src={AllEquipLogo}
-              alt="hero template"
+              alt="All Equip"
               width={500}
               height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
         </div>
