@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="px-40 py-20 w-full relative flex flex-col items-start justify-start"
+      className="px-40 pb-20 pt-60 w-full relative flex flex-col items-start justify-start"
     >
       <h1 className="text-4xl relative z-20 text-white">
         Looking to Collaborate?
