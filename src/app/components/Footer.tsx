@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 import { Mail } from 'lucide-react';
 export const Footer = () => {
   return (
-    <div className="flex justify-start items-center w-full px-36">
+    <div className="flex justify-start items-center w-full px-36 pb-2">
       <div className="flex-grow flex gap-6 ml-4 grow">
       <p className="text-white">Pranav Gopinath</p>
 

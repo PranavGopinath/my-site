@@ -17,7 +17,7 @@ export default function Home() {
     function handleLoad() {
       setTimeout(() => {
         setLoading(false);  // Delay setting loading to false by 1000ms
-      }, 2000);
+      }, 1500);
     }
     window.addEventListener('load', handleLoad);
     return () => window.removeEventListener('load', handleLoad);

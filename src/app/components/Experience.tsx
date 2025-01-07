@@ -23,7 +23,7 @@ export const Experience = () => {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
-              Developed and deployed a business decision making tool, connecting
+              Developed and launched a business decision making tool, connecting
               25+ corporate and plant teams across Martinrea with their desired
               data.
             </p>
@@ -123,13 +123,13 @@ export const Experience = () => {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
-              Developed a fullstack application to digitize several
-              manufacturing processes including quality inspection, progress
+              Developed a full stack application to digitize
+              manufacturing processes, including quality inspection, progress
               oversight, and material stock management.
             </p>
             <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
               Configured an aluminum saw machine to automate raw material
-              cutting, exceeding the company’s objective of dealing with a 43%
+              cutting, exceeding the objective of dealing with a 40%
               increase in production demand.
             </p>
           </div>

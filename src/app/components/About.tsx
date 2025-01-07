@@ -67,7 +67,7 @@ export const About = () => {
       )}
       {showThird && (
         <TextGenerateEffect
-          words={"i'm a lifelong problem solver, looking to innovate through constraints."}
+          words={"i'm a lifelong problem solver, looking to innovate around constraints."}
           className="text-lg text-white pt-4"
         />
       )}
