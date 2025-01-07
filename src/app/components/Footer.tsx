@@ -29,7 +29,7 @@ export const Footer = () => {
             href="mailto:p3gopina@uwaterloo.ca"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 transform hover:scale-110"
+            className="inline-block transition-transform duration-300 transform hover:scale-105"
           >
           <Button size="sm" color="secondary" className="px-2 py-1 border-2 hover:border-[#33AFFF] rounded-sm flex flex-row items-center hover:text-[#33AFFF]">
           <Mail className="text-sm hover:text-[#33AFFF]"/>p3gopina@uwaterloo.ca

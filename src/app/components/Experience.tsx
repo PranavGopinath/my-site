@@ -3,6 +3,15 @@ import { Timeline } from "./ui/timeline";
 import MartinreaLogo from "@/public/martinrealogo.png";
 import BlueprintLogo from "@/public/blueprintlogo.png";
 import AllEquipLogo from "@/public/allequip.avif";
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { DiPostgresql } from "react-icons/di";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
 
 export const Experience = () => {
   const data = [
@@ -11,32 +20,47 @@ export const Experience = () => {
       company: "Martinrea International",
       date: "Sep - Dec 2024",
       content: (
-        <div className="flex flex-row gap-6">
-          <a
-            href="https://www.martinrea.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="z-50 inline-block transition-transform duration-300 transform hover:scale-110"
-          >
-            <Image
-              src={MartinreaLogo}
-              alt="Martinrea"
-              width={300}
-              height={300}
-              className="z-[100] rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-            />
-          </a>
-          <div className="flex flex-col w-1/2">
-
-          <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
-            Developed and deployed a business decision making tool, connecting
-            25+ corporate and plant teams across Martinrea with their desired
-            data.
-          </p>
-          <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
-            Built a universal PLC communication app, enabling developers to
-            connect their factory applications with any make/model of PLC.
-          </p>
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col w-full">
+            <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
+              Developed and deployed a business decision making tool, connecting
+              25+ corporate and plant teams across Martinrea with their desired
+              data.
+            </p>
+            <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
+              Built a universal PLC communication app, enabling developers to
+              connect their factory applications with any make/model of PLC.
+            </p>
+          </div>
+          <div className="flex flex-row gap-10">
+            <a
+              href="https://www.martinrea.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
+            >
+              <Image
+                src={MartinreaLogo}
+                alt="Martinrea"
+                width={300}
+                height={300}
+                className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF]"
+              />
+            </a>
+            <div className="grid grid-cols-2 gap-4 w-1/2 items-center">
+              <div className="flex justify-center">
+                <FaReact className="text-xl flex justify-center" />
+              </div>
+              <div className="flex justify-center">
+                <SiDjango className="text-xl" />
+              </div>
+              <div className="flex justify-center">
+                <FaPython />
+              </div>
+              <div className="flex justify-center">
+                <SiCplusplus />
+              </div>
+            </div>
           </div>
         </div>
       ),
@@ -46,25 +70,31 @@ export const Experience = () => {
       company: "UW Blueprint",
       date: "Sep 2024 - Present",
       content: (
-        <div className="flex flex-row gap-6">
-
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col w-full">
+            <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
+              Partnering with non-profit organizations to build tech solutions,
+              catalyzing efforts to drive social impact
+            </p>
+            <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
+              Driving initiatives in collaboration with Blueprint alumni to
+              ensure sustainable re-use of delivered projects.{" "}
+            </p>
+          </div>
+          <a
+            href="https://www.uwblueprint.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
+          >
             <Image
               src={BlueprintLogo}
-              alt="UW Blueprint"
+              alt="Blueprint"
               width={300}
               height={300}
-              className="rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF]"
             />
-          <div className="flex flex-col w-1/2">
-          <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
-            Partnering with non-profit organizations to build tech solutions,
-            catalyzing efforts to drive social impact
-          </p>
-          <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
-            Driving initiatives in collaboration with Blueprint alumni to ensure
-            sustainable re-use of delivered projects.{" "}
-          </p>
-          </div>
+          </a>
         </div>
       ),
     },
@@ -74,29 +104,32 @@ export const Experience = () => {
       date: "Jan - Apr 2024",
       content: (
         <div className="flex flex-row gap-6">
-          <div className="">
+          <a
+            href="https://www.allequiprepair.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
+          >
             <Image
               src={AllEquipLogo}
-              alt="All Equip"
+              alt="AllEquip"
               width={300}
               height={300}
-              className="rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF]"
             />
-          </div>
+          </a>
           <div className="flex flex-col w-1/2">
-
-          <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
-            Developed a fullstack application to digitize several manufacturing
-            processes including quality inspection, progress oversight, and
-            material stock management.
-          </p>
-          <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
-            Configured an aluminum saw machine to automate raw material cutting,
-            exceeding the company’s objective of dealing with a 43% increase in
-            production demand.
-          </p>
+            <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
+              Developed a fullstack application to digitize several
+              manufacturing processes including quality inspection, progress
+              oversight, and material stock management.
+            </p>
+            <p className="text-neutral-200 text-sm font-normal mb-4 leading-7">
+              Configured an aluminum saw machine to automate raw material
+              cutting, exceeding the company’s objective of dealing with a 43%
+              increase in production demand.
+            </p>
           </div>
-
         </div>
       ),
     },
@@ -104,7 +137,7 @@ export const Experience = () => {
   return (
     <div
       id="experience"
-      className="px-40 pt-20 w-full relative flex flex-col items-start justify-start"
+      className="px-40 pt-40 w-full relative flex flex-col items-start justify-start"
     >
       <h1 className="text-4xl relative z-20 text-[#33AFFF]">Experience</h1>
       <h3 className="text-lg text-white pt-4">

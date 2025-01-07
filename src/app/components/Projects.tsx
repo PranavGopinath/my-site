@@ -35,14 +35,14 @@ export const projects = [
   {
     title: "EduMe",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "A platform tailored towards bridging disparities for individuals with learning disabilities.",
     skills: "Python, Streamlit, OpenAI API",
       link: "https://github.com/PranavGopinath/edume-ai",
   },
   {
     title: "Self Balancing Robot",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "An arduino-powered robot, detecting changes in motion and counteracting them to wobble on.",
     skills: "C++, Arduino",
       link: "https://github.com/PranavGopinath/Franko/tree/master",
   },
