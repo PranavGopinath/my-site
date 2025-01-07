@@ -12,6 +12,8 @@ import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+
 
 export const Experience = () => {
   const data = [
@@ -160,7 +162,7 @@ export const Experience = () => {
                 <FaNodeJs className="text-6xl text-[#33AFFF]"/>
               </div>
               <div className="flex justify-center">
-                <FaReact className="text-6xl text-[#33AFFF]" />
+                <FaFigma className="text-6xl text-[#33AFFF]" />
               </div>
             </div>
           </div>
