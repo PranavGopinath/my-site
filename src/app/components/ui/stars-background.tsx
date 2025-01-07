@@ -69,7 +69,9 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         canvas.width = width;
         canvas.height = height;
         setStars(generateStars(width, height));
-        onLoaded && onLoaded();  // Call the callback once stars are generated and canvas is sized
+        if (onLoaded){
+          onLoaded();
+        }
       }
     };
 
