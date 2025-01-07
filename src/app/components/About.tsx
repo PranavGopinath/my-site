@@ -34,7 +34,7 @@ export const About = () => {
     const timer4 = setTimeout(() => setShowFourth(true), 6000);
     const timer5 = setTimeout(() => setShowFifth(true), 8000);
     const timer6 = setTimeout(() => setShowSixth(true), 10000);
-    const timer7 = setTimeout(() => setShowSeventh(true), 13500);
+    const timer7 = setTimeout(() => setShowSeventh(true), 13000);
 
     return () => {
       clearTimeout(timer1);
@@ -56,7 +56,7 @@ export const About = () => {
       {showFirst && (
         <TextGenerateEffect
           words={"Hey, welcome to my site!"}
-          className="text-4xl relative z-20 text-white"
+          className="text-4xl relative z-20 text-[#33AFFF]"
         />
       )}
       {showSecond && (
@@ -81,7 +81,7 @@ export const About = () => {
       )}
       {showFifth && (
         <TextGenerateEffect
-          words={"wondering how I can contribute to your team?"}
+          words={"wondering how i can contribute to your team?"}
           className="text-lg text-white pt-4"
         />
       )}
@@ -95,7 +95,7 @@ export const About = () => {
       {showSeventh && 
       <div
           className={cn(
-            "flex justify-center flex-grow-0 flex-col items-center gap-2 pt-6",
+            "flex justify-center flex-grow-0 flex-col items-center gap-2 pt-16",
             didScroll && "opacity-0 transition duration-300"
           )}
         >

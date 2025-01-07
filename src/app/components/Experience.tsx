@@ -14,17 +14,19 @@ export const Experience = () => {
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Developed and deployed a business decision making tool, connecting
-            25+ corporate and plant teams across Martinrea with their desired data. 
-
+            25+ corporate and plant teams across Martinrea with their desired
+            data.
           </p>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built a universal PLC communication app, enabling developers to connect their factory applications with any make/model of PLC. 
+            Built a universal PLC communication app, enabling developers to
+            connect their factory applications with any make/model of PLC.
           </p>
-            <a
+          <a
             href="https://www.martinrea.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="z-50 inline-block transition-transform duration-300 transform hover:scale-110">
+            className="z-50 inline-block transition-transform duration-300 transform hover:scale-110"
+          >
             <Image
               src={MartinreaLogo}
               alt="Martinrea"
@@ -32,7 +34,7 @@ export const Experience = () => {
               height={500}
               className="z-[100] rounded-lg object-cover transition-transform duration-300 hover:scale-110"
             />
-            </a>
+          </a>
         </div>
       ),
     },
@@ -73,6 +75,12 @@ export const Experience = () => {
             processes including quality inspection, progress oversight, and
             material stock management.
           </p>
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            Configured an aluminum saw machine to automate raw material cutting,
+            exceeding the company’s objective of dealing with a 43% increase in
+            production demand.
+          </p>
+
           <div className="">
             <Image
               src={AllEquipLogo}
@@ -91,7 +99,7 @@ export const Experience = () => {
       id="experience"
       className="px-40 pt-20 w-full relative flex flex-col items-start justify-start"
     >
-      <h1 className="text-4xl relative z-20 text-white">Experience</h1>
+      <h1 className="text-4xl relative z-20 text-[#33AFFF]">Experience</h1>
       <h3 className="text-lg text-white pt-4">
         places where i've gained invaluable knowledge
       </h3>
