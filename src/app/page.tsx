@@ -16,11 +16,10 @@ export default function Home() {
   useEffect(() => {
     function handleLoad() {
       setTimeout(() => {
-        setLoading(false);  // Delay setting loading to false by 1000ms
-      }, 1500);
+        setLoading(false);
+      }, 1000);
     }
-    window.addEventListener('load', handleLoad);
-    return () => window.removeEventListener('load', handleLoad);
+    handleLoad()
 }, []);
   if (loading){
     return (<div className="flex items-center justify-center h-screen bg-black text-white">
