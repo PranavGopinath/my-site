@@ -18,14 +18,15 @@ export const About = () => {
     function handleScroll() {
       setDidScroll(window.scrollY > 0);
     }
-    if (showSeventh) {
-      window.addEventListener("scroll", handleScroll);
-    }
+    window.addEventListener("scroll", handleScroll);
     return () => {
+      if (showSeventh){
       window.removeEventListener("scroll", handleScroll);
+      }
     };
   }, [showSeventh]);
   useEffect(() => {
+    if (didScroll){
     const delay = 600; // Delay in milliseconds
 
     const timer1 = setTimeout(() => setShowFirst(true), delay);
@@ -35,7 +36,7 @@ export const About = () => {
     const timer5 = setTimeout(() => setShowFifth(true), 8000);
     const timer6 = setTimeout(() => setShowSixth(true), 10000);
     const timer7 = setTimeout(() => setShowSeventh(true), 13000);
-
+    
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
@@ -45,7 +46,8 @@ export const About = () => {
       clearTimeout(timer6);
       clearTimeout(timer7);
     };
-  }, []);
+  }
+  }, [didScroll]);
 
   return (
     <div
