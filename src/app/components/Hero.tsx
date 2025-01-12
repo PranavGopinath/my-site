@@ -26,7 +26,7 @@ export function Hero() {
           Pranav Gopinath
         </p>
         <p className="text-base md:text-lg mt-4 text-white font-sans text-center pb-4">
-          Full-stack Developer, Systems Design Engineering at Waterloo
+          Full Stack Developer, Systems Design Engineering at Waterloo
         </p>
         <div className="text-center flex-grow gap-6 flex justify-center">
           <a

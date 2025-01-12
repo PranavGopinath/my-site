@@ -31,11 +31,11 @@ export const About = () => {
 
     const timer1 = setTimeout(() => setShowFirst(true), delay);
     const timer2 = setTimeout(() => setShowSecond(true), 2000);
-    const timer3 = setTimeout(() => setShowThird(true), 4000);
-    const timer4 = setTimeout(() => setShowFourth(true), 6000);
-    const timer5 = setTimeout(() => setShowFifth(true), 8000);
-    const timer6 = setTimeout(() => setShowSixth(true), 10000);
-    const timer7 = setTimeout(() => setShowSeventh(true), 13000);
+    const timer3 = setTimeout(() => setShowThird(true), 3500);
+    const timer4 = setTimeout(() => setShowFourth(true), 5500);
+    const timer5 = setTimeout(() => setShowFifth(true), 7500);
+    const timer6 = setTimeout(() => setShowSixth(true), 9500);
+    const timer7 = setTimeout(() => setShowSeventh(true), 12500);
     
     return () => {
       clearTimeout(timer1);
