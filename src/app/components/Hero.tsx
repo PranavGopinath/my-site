@@ -28,12 +28,12 @@ export function Hero() {
         <p className="text-base md:text-lg mt-4 text-white font-sans text-center pb-4">
           Full Stack Developer, Systems Design Engineering at Waterloo
         </p>
-        <div className="text-center flex-grow gap-6 flex justify-center">
+        <div className="text-center gap-6 flex justify-center mb-20">
           <a
-            href="https://www.linkedin.com/in/pranav-gopinath-3a4769256/"
+            href="https://www.linkedin.com/in/pranavgo/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 transform hover:scale-110"
+            className="inline-block transition-transform duration-300 transform hover:scale-125"
           >
             <FaLinkedin className="text-lg text-white" />
           </a>
@@ -41,14 +41,14 @@ export function Hero() {
             href="https://www.github.com/PranavGopinath"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 transform hover:scale-110"
+            className="inline-block transition-transform duration-300 transform hover:scale-125"
           >
             <FaGithub className="text-lg text-white" />
           </a>
         </div>
         <div
           className={cn(
-            "flex justify-center flex-grow-0 flex-col items-center gap-2 top-4",
+            "flex justify-center flex-grow-0 flex-col items-center gap-2",
             didScroll && "opacity-0 transition duration-300"
           )}
         >
