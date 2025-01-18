@@ -22,7 +22,7 @@ export const projects = [
     title: "TD Immersive Learning",
     description:
       "Placed 2nd overall at ProdCon 2024, UW PM's Product Management case competition. ",
-    skills: "Figma",
+    skills: "Figma, Canva",
     link: "https://www.canva.com/design/DAGWT_gwqDw/fFQFIl1Lgz5zPF3H-IVB-Q/view?utm_content=DAGWT_gwqDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1714a84309",
   },
   {
