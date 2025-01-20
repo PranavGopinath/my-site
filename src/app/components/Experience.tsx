@@ -26,7 +26,7 @@ export const Experience = () => {
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
               Developed and launched a business decision making tool, connecting
-              25+ corporate and plant teams across Martinrea with their desired
+              50+ corporate and plant teams across Martinrea with their desired
               data.
             </p>
             <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
