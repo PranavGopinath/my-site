@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { WavyBackground } from "./ui/wavy-background";
+// import { WavyBackground } from "./ui/wavy-background";
 import { cn } from "@/lib/utils";
 import { ChevronsDown } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
