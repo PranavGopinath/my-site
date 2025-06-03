@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { ChevronsDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
