@@ -18,7 +18,6 @@ import { GrGraphQl } from "react-icons/gr";
 import { FaAndroid } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { SiHarmonyos } from "react-icons/si";
-import { FaA } from "react-icons/fa6";
 
 
 
