@@ -15,6 +15,10 @@ import { SiCplusplus } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
+import { FaAndroid } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiHarmonyos } from "react-icons/si";
+import { FaA } from "react-icons/fa6";
 
 
 
@@ -48,16 +52,16 @@ export const Experience = () => {
             </a>
             <div className="grid grid-cols-2 gap-4 w-1/2 items-center">
               <div className="flex justify-center">
-                <FaReact className="text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <SiDjango className="text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <FaPython className="text-6xl text-[#33AFFF]"/>
-              </div>
-              <div className="flex justify-center">
                 <SiCplusplus className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <SiHarmonyos className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <FaJava className="text-6xl text-[#33AFFF]"/>
+              </div>
+              <div className="flex justify-center">
+                <FaAndroid className="text-6xl text-[#33AFFF]" />
               </div>
             </div>
           </div>
