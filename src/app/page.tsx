@@ -17,7 +17,7 @@ export default function Home() {
     function handleLoad() {
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 300);
     }
     handleLoad()
 }, []);
@@ -28,9 +28,11 @@ export default function Home() {
 
   }
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen relative">
+      <ShootingStars />
+      <StarsBackground />
       <Navbar />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center relative">
         <Hero />
         <About />
         <Experience />
@@ -38,8 +40,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </div>
-      <ShootingStars />
-      <StarsBackground />
     </div>
   );
 }

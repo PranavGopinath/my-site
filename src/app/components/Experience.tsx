@@ -3,6 +3,7 @@ import { Timeline } from "./ui/timeline";
 import MartinreaLogo from "@/public/martinrealogo.png";
 import BlueprintLogo from "@/public/blueprintlogo.png";
 import AllEquipLogo from "@/public/allequip.avif";
+import HuaweiLogo from "@/public/huawei.png";
 import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
@@ -19,6 +20,50 @@ import { GrGraphQl } from "react-icons/gr";
 
 export const Experience = () => {
   const data = [
+        {
+      title: "Software Engineering Intern",
+      company: "Huawei",
+      date: "May - Aug 2025",
+      content: (
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col w-full">
+            <p className="text-neutral-200 text-sm font-normal mb-8 leading-7">
+              Security and Authentication
+            </p>
+          </div>
+          <div className="flex flex-row gap-10">
+            <a
+              href="https://www.huawei.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
+            >
+              <Image
+                src={HuaweiLogo}
+                alt="Huawei"
+                width={300}
+                height={300}
+                className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF]"
+              />
+            </a>
+            <div className="grid grid-cols-2 gap-4 w-1/2 items-center">
+              <div className="flex justify-center">
+                <FaReact className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <SiDjango className="text-6xl text-[#33AFFF]" />
+              </div>
+              <div className="flex justify-center">
+                <FaPython className="text-6xl text-[#33AFFF]"/>
+              </div>
+              <div className="flex justify-center">
+                <SiCplusplus className="text-6xl text-[#33AFFF]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
     {
       title: "Full Stack Developer",
       company: "Martinrea International",
