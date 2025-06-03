@@ -10,17 +10,18 @@ export const Contact = () => {
         Looking to Collaborate?
       </h1>
       <div className="pointer-events-auto z-50 mt-6 cursor-pointer items-center text-white flex flex-row">
-        <a
-            href="mailto:p3gopina@uwaterloo.ca"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 transform hover:scale-110"
-          >
-          <Button color="secondary" className="border-2 rounded-sm flex flex-row items-center hover:border-[#33AFFF] hover:text-[#33AFFF]">Let&apos;s touch base
-          <Send className="hover:text-[#33AFFF]"/>
-          </Button>
+            <Button
+        as="a"
+        href="mailto:p3gopina@uwaterloo.ca"
+        target="_blank"
+        rel="noopener noreferrer"
+        color="secondary"
+        className="border-2 rounded-sm flex flex-row items-center hover:border-[#33AFFF] hover:text-[#33AFFF]"
+      >
+        Let&apos;s touch base
+        <Send className="ml-2 hover:text-[#33AFFF]" />
+      </Button>
 
-        </a>
       </div>
       
     </div>

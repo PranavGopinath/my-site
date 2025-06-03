@@ -16,6 +16,7 @@ export const About = () => {
   const [didScroll, setDidScroll] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
   const [isLastLineTyped, setIsLastLineTyped] = useState(false);
+  const [isSkipping, setIsSkipping] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -27,7 +28,7 @@ export const About = () => {
   }, []);
 
   useEffect(() => {
-    if (!didScroll) return;
+    if (!didScroll || isSkipping) return;
     if (stepIndex < lines.length - 1) {
       const delay = lines[stepIndex].length * 30 + 300;
       const timer = setTimeout(() => {
@@ -38,7 +39,13 @@ export const About = () => {
       }, delay);
       return () => clearTimeout(timer);
     }
-  }, [stepIndex, didScroll]);
+  }, [stepIndex, didScroll, isSkipping]);
+
+  const handleSkip = () => {
+    setIsSkipping(true);
+    setStepIndex(lines.length - 1);
+    setIsLastLineTyped(true);
+  };
 
   return (
     <div
@@ -53,7 +60,7 @@ export const About = () => {
                 {!isLastLineTyped ? (
                   <Typewriter
                     words={[line]}
-                    typeSpeed={25}
+                    typeSpeed={isSkipping ? 0 : 25}
                     deleteSpeed={0}
                     cursor={false}
                   />
@@ -68,17 +75,30 @@ export const About = () => {
                 )}
               </div>
             ) : (
-              <Typewriter
-                words={[line]}
-                typeSpeed={25}
-                deleteSpeed={0}
-                cursor={false}
-              />
+              isSkipping ? (
+                <span>{line}</span>
+              ) : (
+                <Typewriter
+                  words={[line]}
+                  typeSpeed={25}
+                  deleteSpeed={0}
+                  cursor={false}
+                />
+              )
             )}
           </div>
         ))}
       </div>
-
+      {stepIndex > 0 && stepIndex < lines.length - 1 && !isLastLineTyped && !isSkipping && (
+        <div className="absolute bottom-20 justify-start transform">
+          <button
+            onClick={handleSkip}
+            className="text-[#33AFFF] text-sm hover:underline opacity-50 hover:opacity-100 transition-opacity"
+          >
+            Skip typing
+          </button>
+        </div>
+      )}
     </div>
   );
 };
