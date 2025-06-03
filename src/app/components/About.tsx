@@ -80,15 +80,6 @@ export const About = () => {
         ))}
       </div>
 
-      {stepIndex === lines.length -1 && (
-        <div
-          className={cn(
-            "flex justify-center items-center gap-2 pt-4 md:pt-16 relative z-10"
-          )}
-        >
-          <ChevronsDown className="text-xl md:text-2xl text-white animate-bounce" />
-        </div>
-      )}
     </div>
   );
 };
