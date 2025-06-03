@@ -12,6 +12,7 @@ interface WavyBackgroundProps {
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
+  fullWidth?: boolean;
 }
 
 export const WavyBackground: React.FC<WavyBackgroundProps> = ({
@@ -24,6 +25,7 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
   blur = 10,
   speed = "fast",
   waveOpacity = 0.5,
+  fullWidth = true,
   ...props
 }) => {
   const noise = createNoise3D();
@@ -35,26 +37,32 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
     return speed === "slow" ? 0.001 : 0.002;
   };
 
-  const init = (): void => {
+  const init = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
     ctx = canvas.getContext("2d");
     if (!ctx) return;
-    
+
     w = canvas.width = window.innerWidth;
     h = canvas.height = window.innerHeight;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
 
-    window.onresize = () => {
+    const handleResize = () => {
       if (!canvas) return;
       w = canvas.width = window.innerWidth;
       h = canvas.height = window.innerHeight;
       if (ctx) ctx.filter = `blur(${blur}px)`;
     };
 
+    window.addEventListener('resize', handleResize);
     render();
+
+    // Return cleanup function
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   };
 
   const drawWave = (n: number): void => {
@@ -66,7 +74,7 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
       ctx.strokeStyle = colors[i % colors.length];
       for (x = 0; x < w; x += 5) {
         const y = noise(x / 800, 0.3 * i, nt) * 100;
-        ctx.lineTo(x, y + h * 0.5); // adjust for height, currently at 50% of the container
+        ctx.lineTo(x, y + h * 0.5);
       }
       ctx.stroke();
       ctx.closePath();
@@ -84,25 +92,42 @@ export const WavyBackground: React.FC<WavyBackgroundProps> = ({
   };
 
   useEffect(() => {
-    init();
-    return () => cancelAnimationFrame(animationId);
-  }, []);
+    const cleanup = init();
+    return () => {
+      if (cleanup) cleanup();
+      cancelAnimationFrame(animationId);
+    };
+  }, [fullWidth]);
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
     setIsSafari(
       typeof window !== "undefined" &&
-      navigator.userAgent.includes("Safari") &&
-      !navigator.userAgent.includes("Chrome")
+        navigator.userAgent.includes("Safari") &&
+        !navigator.userAgent.includes("Chrome")
     );
   }, []);
 
   return (
-    <div className={cn("h-screen flex flex-col items-center justify-center", containerClassName)}>
-      <canvas className="absolute inset-0 z-0" ref={canvasRef} id="canvas" style={{...(isSafari ? { filter: `blur(${blur}px)` } : {})}}></canvas>
-      <div className={cn("relative z-10", className)} {...props}>
-        {children}
-      </div>
+    <div
+      className={cn(
+        "relative h-screen",
+        fullWidth ? "w-screen" : "w-full",
+        className
+      )}
+      {...props}
+    >
+      <canvas
+        className="absolute inset-0 z-0"
+        ref={canvasRef}
+        id="canvas"
+        style={{
+          ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
+          width: "100%",
+          height: "100%",
+        }}
+      />
+      <div className={cn("relative z-10 h-full", containerClassName)}>{children}</div>
     </div>
   );
 };

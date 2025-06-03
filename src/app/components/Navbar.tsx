@@ -61,34 +61,37 @@ export const Navbar = () => {
       `}</style>
       <div
         className={cn(
-          "text-white top-0 z-50 h-20 w-screen important sticky flex flex-row items-center justify-center",
+          "sticky top-0 z-50 h-20 w-full text-white",
           didScroll
             ? "bg-gradient-to-br from-transparent to-black backdrop-blur transition"
             : "bg-transparent"
         )}
       >
-        <div className="flex grow-0 w-1/12 justify-center">
-          <img
-            src="../favicon.ico"
-            className="h-10 cursor-pointer"
-            onClick={() => scrollToSection("home")}
-          ></img>
-        </div>
-        <div className="flex flex-row grow items-center justify-evenly">
-          <div className="nav-item">
-            <span onClick={() => scrollToSection("about")}>About</span>
+        <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between px-4">
+          <div className="flex items-center">
+            <img
+              src="../favicon.ico"
+              className="h-10 cursor-pointer"
+              onClick={() => scrollToSection("home")}
+              alt="Logo"
+            />
           </div>
-          <div className="nav-item">
-            <span onClick={() => scrollToSection("experience")}>
-              Experience
-            </span>
-          </div>
-          <div className="nav-item">
-            <span onClick={() => scrollToSection("projects")}>Projects</span>
-          </div>
-          <div className="nav-item">
-            <span onClick={() => scrollToSection("contact")}>Contact</span>
-          </div>
+          <nav className="flex items-center space-x-8">
+            <div className="nav-item">
+              <span onClick={() => scrollToSection("about")}>About</span>
+            </div>
+            <div className="nav-item">
+              <span onClick={() => scrollToSection("experience")}>
+                Experience
+              </span>
+            </div>
+            <div className="nav-item">
+              <span onClick={() => scrollToSection("projects")}>Projects</span>
+            </div>
+            <div className="nav-item">
+              <span onClick={() => scrollToSection("contact")}>Contact</span>
+            </div>
+          </nav>
         </div>
       </div>
     </>

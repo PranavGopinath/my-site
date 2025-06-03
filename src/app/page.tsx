@@ -28,16 +28,18 @@ export default function Home() {
 
   }
   return (
-    <div className="bg-black relative flex justify-center items-center flex-col overflow-visible">
+    <div className="bg-black min-h-screen">
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div className="flex flex-col items-center">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
       <ShootingStars />
       <StarsBackground />
-      <Footer /> 
     </div>
   );
 }
