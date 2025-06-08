@@ -2,7 +2,7 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export function Projects() {
   return (
-    <div className="px-4 sm:px-8 md:px-16 lg:px-40 pt-24 sm:pt-32 md:pt-48">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-24 pt-24 sm:pt-32 md:pt-48 w-full">
       <h1 id="projects" className='text-[#33AFFF] text-2xl sm:text-3xl md:text-4xl'>Projects</h1>
       <h3 className='text-white text-base sm:text-lg pt-2 sm:pt-4'>cool things i&apos;ve worked on in my spare time </h3>
       <HoverEffect items={projects} />
@@ -38,20 +38,20 @@ export const projects = [
     description:
       "A platform tailored towards bridging disparities for individuals with learning disabilities.",
     skills: "Python, Streamlit, OpenAI API",
-    link: "https://github.com/PranavGopinath/edume-ai",
+      link: "https://github.com/PranavGopinath/edume-ai",
   },
   {
     title: "Self Balancing Robot",
     description:
       "An arduino-powered robot, detecting changes in motion and counteracting them to wobble on.",
     skills: "C++, Arduino",
-    link: "https://github.com/PranavGopinath/Franko/tree/master",
+      link: "https://github.com/PranavGopinath/Franko/tree/master",
   },
   {
     title: "Estate Eagle",
     description:
       "A real-estate price forecasting application to help homebuyers stay on top of market trends.",
     skills: "Next.js, Typescript, Node.js, Express.js, TailwindCSS", 
-    link: "https://github.com/PranavGopinath/Estate-Eagle",
+      link: "https://github.com/PranavGopinath/Estate-Eagle",
   },
 ];

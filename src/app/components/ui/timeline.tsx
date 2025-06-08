@@ -50,21 +50,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </div>
               <div className="flex flex-col pl-16 md:pl-20">
                 <h3 className="text-xl md:text-2xl font-bold text-neutral-300">
-                  {item.title}
-                </h3>
+                {item.title}
+              </h3>
                 <h3 className="text-lg md:text-xl font-bold text-neutral-400">
-                  {item.company}
-                </h3>
+                {item.company}
+              </h3>
                 <h3 className="text-base md:text-lg font-bold text-neutral-500">
-                  {item.date}
-                </h3>
+                {item.date}
+              </h3>
               </div>
             </div>
 
             <div className="relative pl-16 md:pl-8 md:pr-8 w-full max-w-2xl">
-              <h3 className="md:hidden block text-xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                {item.title}
-              </h3>
               <div className="flex flex-col gap-4">
                 {item.content}
               </div>

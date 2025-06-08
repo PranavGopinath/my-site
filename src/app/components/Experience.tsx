@@ -96,7 +96,7 @@ export const Experience = () => {
                 alt="Martinrea"
                 width={200}
                 height={200}
-                className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
+                className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
               />
             </a>
             <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">
@@ -145,7 +145,7 @@ export const Experience = () => {
                 alt="Blueprint"
                 width={200}
                 height={200}
-                className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
+                className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
               />
             </a>
             <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">
@@ -196,7 +196,7 @@ export const Experience = () => {
                 alt="AllEquip"
                 width={200}
                 height={200}
-                className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
+                className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
               />
             </a>
             <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">

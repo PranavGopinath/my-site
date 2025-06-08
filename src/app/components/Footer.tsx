@@ -25,14 +25,14 @@ export const Footer = () => {
             <FaGithub className="text-base sm:text-lg text-white hover:text-[#33AFFF]" />
           </a>
         </div>
-      </div>
-      <div className="text-white">
+        </div>
+        <div className="text-white">
         <a
-          href="mailto:p3gopina@uwaterloo.ca"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block transition-transform duration-300 transform hover:scale-105"
-        >
+            href="mailto:p3gopina@uwaterloo.ca"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block transition-transform duration-300 transform hover:scale-105"
+          >
           <Button 
             size="sm" 
             color="secondary" 
@@ -43,7 +43,7 @@ export const Footer = () => {
             <span className="sm:hidden">Email</span>
           </Button>
         </a>
-      </div>
+        </div>
     </div>
   );
 };
