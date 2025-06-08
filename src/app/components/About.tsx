@@ -50,13 +50,16 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="min-h-screen px-10 md:px-40 pt-10 md:pt-40 pb-10 md:pb-40 w-full relative flex flex-col"
+      className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-40 pt-12 sm:pt-16 md:pt-32 pb-10 md:pb-40 w-full max-w-full relative flex flex-col overflow-x-hidden"
     >
-      <div className="items-start justify-start space-y-4">
+      <div className="items-start justify-start space-y-2 sm:space-y-3 md:space-y-4 max-w-full">
         {lines.slice(0, stepIndex + 1).map((line, index) => (
-          <div key={index} className={cn("text-white text-lg md:text-xl", index === 0 && "text-[#33AFFF] text-2xl md:text-4xl")}>
+          <div key={index} className={cn(
+            "text-white text-sm sm:text-base md:text-lg lg:text-xl break-words", 
+            index === 0 && "text-[#33AFFF] text-lg sm:text-xl md:text-2xl lg:text-4xl"
+          )}>
             {index === lines.length - 1 ? (
-              <div className="inline-flex items-center">
+              <div className="inline-flex items-center flex-wrap gap-2">
                 {!isLastLineTyped ? (
                   <Typewriter
                     words={[line]}
@@ -67,10 +70,9 @@ export const About = () => {
                 ) : (
                   <>
                     <span>{line}</span>
-                    <Link href="#experience" className="text-[#33AFFF] hover:underline ml-2">experience</Link>
-                    <span className="text-white mx-2">and</span>
+                    <Link href="#experience" className="text-[#33AFFF] hover:underline">experience</Link>
+                    <span className="text-white">and</span>
                     <Link href="#projects" className="text-[#33AFFF] hover:underline">projects</Link>
-                    <span className="text-white">.</span>
                   </>
                 )}
               </div>

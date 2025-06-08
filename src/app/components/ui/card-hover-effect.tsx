@@ -21,46 +21,48 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 py-8 sm:py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <Link
-        href={item?.link}
-        passHref
-        key={item?.link}
-        target="_blank" // Move these attributes to the Link component
-        rel="noopener noreferrer"
-        className="relative group block p-2 h-full w-full"
-        onMouseEnter={() => setHoveredIndex(idx)}
-        onMouseLeave={() => setHoveredIndex(null)}
-      >
-        <div className="h-full w-full"> {/* This div now serves as the main wrapper */}
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-[#33AFFF] block rounded-3xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 0.15 },
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
-                }}
-              />
-            )}
-          </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-            <CardDescription>{item?.skills}</CardDescription>
-          </Card>
-        </div>
-      </Link>
+          href={item?.link}
+          passHref
+          key={item?.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative group block p-2 h-full w-full"
+          onMouseEnter={() => setHoveredIndex(idx)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
+          <div className="relative h-full w-full p-4 sm:p-6 rounded-xl">
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 h-full w-full bg-[#33AFFF] block rounded-xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.15 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <Card>
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+              <div className="mt-4">
+                <CardDescription>{item?.skills}</CardDescription>
+              </div>
+            </Card>
+          </div>
+        </Link>
       ))}
     </div>
   );
@@ -76,16 +78,17 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "relative z-20 h-full w-full overflow-hidden rounded-xl border border-transparent bg-black p-4 sm:p-6 group-hover:border-[#33AFFF]/50 transition-all duration-300",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-2 sm:p-4">{children}</div>
       </div>
     </div>
   );
 };
+
 export const CardTitle = ({
   className,
   children,
@@ -94,11 +97,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-lg sm:text-xl md:text-2xl font-bold tracking-wide text-white mb-2 sm:mb-4", className)}>
       {children}
     </h4>
   );
 };
+
 export const CardDescription = ({
   className,
   children,
@@ -109,7 +113,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-2 sm:mt-4 text-sm sm:text-base text-zinc-400 tracking-wide leading-relaxed",
         className
       )}
     >

@@ -1,6 +1,7 @@
 "use client";
 import {useEffect, useState} from 'react'
 import {cn} from '@/lib/utils'
+
 export const Navbar = () => {
   const [didScroll, setDidScroll] = useState<boolean>(false);
 
@@ -14,6 +15,7 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   function scrollToSection(sect: string): void {
     if (sect === "home") {
       window.scrollTo({
@@ -27,12 +29,13 @@ export const Navbar = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   }
+
   return (
     <>
       <style jsx>{`
         .nav-item {
           position: relative;
-          padding: 10px;
+          padding: 8px;
           cursor: pointer;
         }
 
@@ -61,35 +64,35 @@ export const Navbar = () => {
       `}</style>
       <div
         className={cn(
-          "sticky top-0 z-50 h-20 w-full text-white",
+          "sticky top-0 z-50 h-16 w-full text-white",
           didScroll
             ? "bg-gradient-to-br from-transparent to-black backdrop-blur transition"
             : "bg-transparent"
         )}
       >
-        <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between px-4">
-          <div className="flex items-center">
+        <div className="w-full max-w-7xl mx-auto h-full flex items-center justify-between px-2 sm:px-4">
+          <div className="flex items-center -ml-2">
             <img
               src="../favicon.ico"
-              className="h-10 cursor-pointer"
+              className="h-8 cursor-pointer"
               onClick={() => scrollToSection("home")}
               alt="Logo"
             />
           </div>
-          <nav className="flex items-center space-x-8">
+          <nav className="flex items-center space-x-4 sm:space-x-6">
             <div className="nav-item">
-              <span onClick={() => scrollToSection("about")}>About</span>
+              <span onClick={() => scrollToSection("about")} className="text-sm sm:text-base">About</span>
             </div>
             <div className="nav-item">
-              <span onClick={() => scrollToSection("experience")}>
+              <span onClick={() => scrollToSection("experience")} className="text-sm sm:text-base">
                 Experience
               </span>
             </div>
             <div className="nav-item">
-              <span onClick={() => scrollToSection("projects")}>Projects</span>
+              <span onClick={() => scrollToSection("projects")} className="text-sm sm:text-base">Projects</span>
             </div>
             <div className="nav-item">
-              <span onClick={() => scrollToSection("contact")}>Contact</span>
+              <span onClick={() => scrollToSection("contact")} className="text-sm sm:text-base">Contact</span>
             </div>
           </nav>
         </div>
