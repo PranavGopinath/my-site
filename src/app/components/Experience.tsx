@@ -19,11 +19,9 @@ import { FaAndroid } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { SiHarmonyos } from "react-icons/si";
 
-
-
 export const Experience = () => {
   const data = [
-        {
+    {
       title: "Software Engineering Intern",
       company: "Huawei",
       date: "May - Aug 2025",
@@ -57,7 +55,7 @@ export const Experience = () => {
                 <SiHarmonyos className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <FaJava className="text-4xl sm:text-6xl text-[#33AFFF]"/>
+                <FaJava className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
                 <FaAndroid className="text-4xl sm:text-6xl text-[#33AFFF]" />
@@ -107,7 +105,7 @@ export const Experience = () => {
                 <SiDjango className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <FaPython className="text-4xl sm:text-6xl text-[#33AFFF]"/>
+                <FaPython className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
                 <SiCplusplus className="text-4xl sm:text-6xl text-[#33AFFF]" />
@@ -129,8 +127,8 @@ export const Experience = () => {
               catalyzing efforts to drive social impact
             </p>
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developing a task management application for a women's homeless
-              shelter in the KW Area. 
+              Developing a task management application for a women&apos;s
+              homeless shelter in the KW area.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
@@ -156,7 +154,7 @@ export const Experience = () => {
                 <SiTypescript className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <GrGraphQl className="text-4xl sm:text-6xl text-[#33AFFF]"/>
+                <GrGraphQl className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
                 <DiPostgresql className="text-4xl sm:text-6xl text-[#33AFFF]" />
@@ -174,14 +172,14 @@ export const Experience = () => {
         <div className="flex flex-col gap-4 sm:gap-6">
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developed a full stack application to digitize
-              manufacturing processes, including quality inspection, progress
-              oversight, and material stock management.
+              Developed a full stack application to digitize manufacturing
+              processes, including quality inspection, progress oversight, and
+              material stock management.
             </p>
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
               Configured an aluminum saw machine to automate raw material
-              cutting, exceeding the objective of dealing with a 40%
-              increase in production demand.
+              cutting, exceeding the objective of dealing with a 40% increase in
+              production demand.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
@@ -207,7 +205,7 @@ export const Experience = () => {
                 <SiMongodb className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <FaNodeJs className="text-4xl sm:text-6xl text-[#33AFFF]"/>
+                <FaNodeJs className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
                 <FaFigma className="text-4xl sm:text-6xl text-[#33AFFF]" />
@@ -223,7 +221,9 @@ export const Experience = () => {
       id="experience"
       className="px-4 sm:px-8 md:px-16 lg:px-40 pt-16 sm:pt-24 md:pt-32 w-full relative flex flex-col items-start justify-start"
     >
-      <h1 className="text-2xl sm:text-3xl md:text-4xl relative z-20 text-[#33AFFF]">Experience</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl relative z-20 text-[#33AFFF]">
+        Experience
+      </h1>
       <h3 className="text-base sm:text-lg text-white pt-2 sm:pt-4 pb-8">
         places where i&apos;ve gained invaluable knowledge
       </h3>
