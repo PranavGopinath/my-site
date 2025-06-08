@@ -129,8 +129,8 @@ export const Experience = () => {
               catalyzing efforts to drive social impact
             </p>
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Driving initiatives in collaboration with Blueprint alumni to
-              ensure sustainable re-use of delivered projects.{" "}
+              Developing a task management application for a women's homeless
+              shelter in the KW Area. 
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
