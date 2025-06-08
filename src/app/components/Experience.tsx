@@ -22,7 +22,7 @@ import { SiHarmonyos } from "react-icons/si";
 export const Experience = () => {
   const data = [
     {
-      title: "Software Engineering Intern",
+      title: "Software Engineer Intern",
       company: "Huawei",
       date: "May - Aug 2025",
       content: (
@@ -67,7 +67,7 @@ export const Experience = () => {
     },
     {
       title: "Full Stack Developer",
-      company: "Martinrea International",
+      company: "Martinrea",
       date: "Sep - Dec 2024",
       content: (
         <div className="flex flex-col gap-4 sm:gap-6">
@@ -116,7 +116,7 @@ export const Experience = () => {
       ),
     },
     {
-      title: "Software Developer + VP Project Scoping",
+      title: "Project Developer + VP Project Scoping",
       company: "UW Blueprint",
       date: "Sep 2024 - Present",
       content: (
