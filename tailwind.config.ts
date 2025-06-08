@@ -162,7 +162,7 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       fontFamily: {
-        mono: ['GeistMono', 'Menlo', 'Courier New', 'monospace'],
+        sans: ['Merriweather', 'monospace'],
       }
     },
   },
