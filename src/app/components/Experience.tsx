@@ -29,7 +29,7 @@ export const Experience = () => {
         <div className="flex flex-col gap-4 sm:gap-6">
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Security and Authentication
+              Dynamic identity authentication for all mobile devices.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
@@ -55,10 +55,10 @@ export const Experience = () => {
                 <SiHarmonyos className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <FaJava className="text-4xl sm:text-6xl text-[#33AFFF]" />
+                <FaPython className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
               <div className="flex justify-center">
-                <FaAndroid className="text-4xl sm:text-6xl text-[#33AFFF]" />
+                <FaJava className="text-4xl sm:text-6xl text-[#33AFFF]" />
               </div>
             </div>
           </div>
