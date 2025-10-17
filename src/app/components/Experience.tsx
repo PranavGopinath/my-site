@@ -15,7 +15,6 @@ import { SiCplusplus } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
-import { FaAndroid } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { SiHarmonyos } from "react-icons/si";
 
