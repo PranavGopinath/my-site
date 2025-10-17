@@ -44,14 +44,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             key={index}
             className="flex justify-start pt-8 sm:pt-16 md:pt-24 md:gap-10"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-start md:items-center top-20 md:top-32 self-start w-full md:max-w-xs lg:max-w-sm">
+              <div className="sticky flex flex-col md:flex-row z-40 items-start md:items-center top-20 md:top-32 self-start w-full md:max-w-xs lg:max-w-sm">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-neutral-800 flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-1" />
               </div>
-              <div className="flex flex-col pl-16 md:pl-20">
-                <h3 className="text-xl md:text-2xl font-bold text-neutral-300">
-                {item.title}
-              </h3>
+              <div className="h-10 w-10 absolute left-3 md:left-3 bg-neutral-800 flex items-center justify-center rounded-md shadow-sm">
+                <div className="h-5 w-5 bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 rounded-sm" />
+              </div>
+               <div className="flex flex-col pl-16 md:pl-20">
+                 <h3 className="text-xl md:text-2xl font-bold text-neutral-300">
+                 {item.title}
+               </h3>
                 <h3 className="text-lg md:text-xl font-bold text-neutral-400">
                 {item.company}
               </h3>

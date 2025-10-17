@@ -14,20 +14,20 @@ export const projects = [
   {
     title: "Transfermation",
     description:
-      "A machine learning powered prediction mechanism for determining the impact of hypothetical football transfers ⚽",
+      "A machine learning powered prediction mechanism for determining the impact of football transfers ⚽",
     skills: "Python, Scikit-learn, Next.js, FastAPI",
       link: "https://github.com/PranavGopinath/transfermation",
   },
   {
     title: "Kaizen Journal",
     description:
-      "A digital adaptation of a self-improvement journal, with personalized touches to improve journalling experience 📘",
+      "A digital adaptation of the kaizen journal, designed to improve journalling experience 📘",
     skills:
-    "Expo, React Native, Node.js, Supabase, TailwindCSS",
+    "Expo, React Native, Node.js, Supabase, Tailwind",
     link: "https://github.com/PranavGopinath/kaizen_journal",
   },
   {
-    title: "TD Immersive Learning",
+    title: "TD Product Roadmap",
     description:
       "Placed 2nd overall at ProdCon 2024, UW PM's Product Management case competition 💡",
     skills: "Figma, Canva",
@@ -41,17 +41,18 @@ export const projects = [
     link: "https://github.com/PranavGopinath/GoosePeek",
   },
   {
-    title: "Self Balancing Robot",
-    description:
-      "An arduino-powered robot, detecting changes in motion and counteracting them to wobble on 🤖",
-    skills: "C++, Arduino",
-      link: "https://github.com/PranavGopinath/Franko/tree/master",
-  },
-  {
     title: "Estate Eagle",
     description:
-      "A real-estate price forecasting application to help homebuyers stay on top of market trends 🏠",
-    skills: "Next.js, Typescript, Node.js, Express.js, TailwindCSS", 
+      "A real-estate price forecasting app to stay on top of market trends 🏠",
+    skills: "Next.js, Typescript, Node.js, Express, Tailwind", 
       link: "https://github.com/PranavGopinath/Estate-Eagle",
   },
+  {
+    title: "EduMe",
+    description:
+      "An educational assistant tailored for people with learning disabilities 📖",
+    skills: "Python, OpenAI API, Streamlit",
+      link: "https://github.com/PranavGopinath/edume-ai",
+  },
+  
 ];

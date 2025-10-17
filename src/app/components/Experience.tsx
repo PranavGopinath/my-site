@@ -42,8 +42,8 @@ export const Experience = () => {
               <Image
                 src={HuaweiLogo}
                 alt="Huawei"
-                width={200}
-                height={200}
+                width={400}
+                height={300}
                 className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
               />
             </a>
@@ -123,12 +123,10 @@ export const Experience = () => {
         <div className="flex flex-col gap-4 sm:gap-6">
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Partnering with non-profit organizations to build tech solutions,
-              catalyzing efforts to drive social impact
+              Developed a gamified task management system for Marillac Place, a women&apos;s shelter supporting new mothers.
             </p>
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developing a task management application for a women&apos;s
-              homeless shelter in the KW area.
+              DEngineering a route generation app for Food4Kids, a food prep & delivery non-profit supporting 4000+ children
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
@@ -172,14 +170,9 @@ export const Experience = () => {
         <div className="flex flex-col gap-4 sm:gap-6">
           <div className="flex flex-col w-full">
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developed a full stack application to digitize manufacturing
+              Developed full stack applications to digitize manufacturing
               processes, including quality inspection, progress oversight, and
               material stock management.
-            </p>
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Configured an aluminum saw machine to automate raw material
-              cutting, exceeding the objective of dealing with a 40% increase in
-              production demand.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">

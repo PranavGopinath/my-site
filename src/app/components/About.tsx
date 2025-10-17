@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const lines = [
   "hey, welcome to my site!",
-  "let's get acquainted.",
   "i'm currently working as a swe intern at huawei, followed by my 2b term of syde this fall.",
   "i'm a lifelong puzzle solver, arsenal fan, and one who loves building things that matter to people.",
   "wondering how i can contribute to your team?",
