@@ -115,7 +115,7 @@ export const Experience = () => {
       ),
     },
     {
-      title: "Project Developer + VP Project Scoping",
+      title: "Software Developer + VP Project Scoping",
       company: "UW Blueprint",
       date: "Sep 2024 - Present",
       content: (
@@ -125,7 +125,7 @@ export const Experience = () => {
               Developed a gamified task management system for Marillac Place, a women&apos;s shelter supporting new mothers.
             </p>
             <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              DEngineering a route generation app for Food4Kids, a food prep & delivery non-profit supporting 4000+ children
+              Engineering a route generation app for Food4Kids, a food prep & delivery non-profit supporting 4000+ children
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
