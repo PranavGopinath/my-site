@@ -26,14 +26,13 @@ export function Hero() {
           Pranav Gopinath
         </p>
         <p className="text-base md:text-lg mt-4 text-white text-center pb-4">
-          Full Stack Developer,&nbsp;
           <a
             href="https://www.sydewebring.site/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#33AFFF] hover:underline"
           >
-            Systems Design Engineering
+            Systems Design Engineer
           </a>
           &nbsp;at Waterloo
         </p>

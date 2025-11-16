@@ -16,7 +16,7 @@ export const projects = [
     description:
       "A machine learning powered prediction mechanism for determining the impact of football transfers ⚽",
     skills: "Python, Scikit-learn, Next.js, FastAPI",
-      link: "https://github.com/PranavGopinath/transfermation",
+      link: "https://transfermation.vercel.app",
   },
   {
     title: "Spectra",
