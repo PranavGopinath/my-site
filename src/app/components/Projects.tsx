@@ -22,7 +22,7 @@ export const projects = [
     title: "Spectra",
     description:
       "A centralized hub for your creative side, with personalized recs",
-    skills: "Python, MiniLM-L6-v2, Llama 3.2, Next.js, FastAPI",
+    skills: "Python, all-MiniLM-L6-v2, Typescript, Next.js, FastAPI",
     link: "https://github.com/PranavGopinath/spectra",
   },
   {
