@@ -23,7 +23,7 @@ export const projects = [
     description:
       "A centralized hub for your creative side, with personalized recs",
     skills: "Python, all-MiniLM-L6-v2, Typescript, Next.js, FastAPI",
-    link: "https://github.com/PranavGopinath/spectra",
+    link: "https://spectra-ebon.vercel.app",
   },
   {
     title: "Kaizen Journal",
