@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Timeline } from "./ui/timeline";
 import MartinreaLogo from "@/public/martinrealogo.png";
 import BlueprintLogo from "@/public/blueprintlogo.png";
-import AllEquipLogo from "@/public/allequip.avif";
+import PlatinumLogo from "@/public/platinumlogo.png";
 import HuaweiLogo from "@/public/huawei.png";
 import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
@@ -182,8 +182,8 @@ export const Experience = () => {
               className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
             >
               <Image
-                src={AllEquipLogo}
-                alt="AllEquip"
+                src={PlatinumLogo}
+                alt="PlatinumTrailers"
                 width={200}
                 height={200}
                 className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
