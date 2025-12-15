@@ -21,7 +21,7 @@ export const projects = [
   {
     title: "Spectra",
     description:
-      "A centralized hub for your creative side, with personalized recs",
+      "A centralized hub for your creative side, with personalized recs 📺",
     skills: "Python, all-MiniLM-L6-v2, Typescript, Next.js, FastAPI",
     link: "https://spectra-ebon.vercel.app",
   },
