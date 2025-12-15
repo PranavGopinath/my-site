@@ -1,6 +1,7 @@
 "use client";
 import {useEffect, useState} from 'react'
 import {cn} from '@/lib/utils'
+import Image from 'next/image'
 
 export const Navbar = () => {
   const [didScroll, setDidScroll] = useState<boolean>(false);
@@ -72,9 +73,11 @@ export const Navbar = () => {
       >
         <div className="w-full max-w-7xl mx-auto h-full flex items-center justify-between px-2 sm:px-4">
           <div className="flex items-center -ml-2">
-            <img
-              src="../favicon.ico"
-              className="h-8 cursor-pointer"
+            <Image
+              src="/favicon.ico"
+              width={32}
+              height={32}
+              className="h-8 w-8 cursor-pointer"
               onClick={() => scrollToSection("home")}
               alt="Logo"
             />
