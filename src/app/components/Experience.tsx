@@ -1,225 +1,145 @@
+"use client";
 import Image from "next/image";
-import { Timeline } from "./ui/timeline";
-import MartinreaLogo from "@/public/martinrealogo.png";
-import BlueprintLogo from "@/public/blueprintlogo.png";
-import PlatinumLogo from "@/public/platinumlogo.png";
-import HuaweiLogo from "@/public/huawei.png";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
-import { DiPostgresql } from "react-icons/di";
-import { RiNextjsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
-import { SiDjango } from "react-icons/si";
-import { FaFigma } from "react-icons/fa";
-import { GrGraphQl } from "react-icons/gr";
-import { FaJava } from "react-icons/fa";
-import { SiHarmonyos } from "react-icons/si";
+import { SectionHeader } from "./SectionHeader";
+
+const ArrowIcon = () => (
+  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="1.6">
+    <path d="M7 17L17 7M9 7h8v8" />
+  </svg>
+);
+
+const experience = [
+  {
+    role: "Software Engineer Intern",
+    company: "Huawei",
+    date: "May — Aug 2025",
+    line: "Dynamic identity authentication for mobile devices.",
+    logo: "/huawei-logo.png",
+    url: "https://www.huawei.com/en/",
+    stack: ["C++", "HarmonyOS", "Python", "Java"],
+  },
+  {
+    role: "Full Stack Developer",
+    company: "Martinrea",
+    date: "Sep — Dec 2024",
+    line: "Business decision tool connecting 50+ corporate and plant teams. Built a universal PLC communication app.",
+    logo: "/martinrea-logo.png",
+    url: "https://www.martinrea.com",
+    stack: ["React", "Django", "Python", "C++"],
+  },
+  {
+    role: "Software Dev · VP Project Scoping",
+    company: "UW Blueprint",
+    date: "Sep 2024 — Present",
+    line: "Gamified task system for Marillac Place; route generation app for Food4Kids (4000+ children).",
+    logo: "/blueprint-logo.png",
+    url: "https://www.uwblueprint.org",
+    stack: ["Node.js", "TypeScript", "GraphQL", "Postgres"],
+  },
+  {
+    role: "Engineering Intern",
+    company: "All Equip",
+    date: "Jan — Apr 2024",
+    line: "Full-stack apps to digitize manufacturing — quality, oversight, stock.",
+    logo: "/allequip-logo.png",
+    url: "https://www.allequiprepair.ca/",
+    stack: ["Next.js", "MongoDB", "Node.js", "Figma"],
+  },
+];
 
 export const Experience = () => {
-  const data = [
-    {
-      title: "Software Engineer Intern",
-      company: "Huawei",
-      date: "May - Aug 2025",
-      content: (
-        <div className="flex flex-col gap-4 sm:gap-6">
-          <div className="flex flex-col w-full">
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Dynamic identity authentication for all mobile devices.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-            <a
-              href="https://www.huawei.com/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
-            >
-              <Image
-                src={HuaweiLogo}
-                alt="Huawei"
-                width={400}
-                height={300}
-                className="z-[100] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
-              />
-            </a>
-            <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">
-              <div className="flex justify-center">
-                <SiCplusplus className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <SiHarmonyos className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <FaPython className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <FaJava className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Martinrea",
-      date: "Sep - Dec 2024",
-      content: (
-        <div className="flex flex-col gap-4 sm:gap-6">
-          <div className="flex flex-col w-full">
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developed and launched a business decision making tool, connecting
-              50+ corporate and plant teams across Martinrea with their desired
-              data.
-            </p>
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Built a universal PLC communication app, enabling developers to
-              connect their factory applications with any make/model of PLC.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-            <a
-              href="https://www.martinrea.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
-            >
-              <Image
-                src={MartinreaLogo}
-                alt="Martinrea"
-                width={200}
-                height={200}
-                className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
-              />
-            </a>
-            <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">
-              <div className="flex justify-center">
-                <FaReact className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <SiDjango className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <FaPython className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <SiCplusplus className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Software Developer + VP Project Scoping",
-      company: "UW Blueprint",
-      date: "Sep 2024 - Present",
-      content: (
-        <div className="flex flex-col gap-4 sm:gap-6">
-          <div className="flex flex-col w-full">
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developed a gamified task management system for Marillac Place, a women&apos;s shelter supporting new mothers.
-            </p>
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Engineering a route generation app for Food4Kids, a food prep & delivery non-profit supporting 4000+ children
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-            <a
-              href="https://www.uwblueprint.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
-            >
-              <Image
-                src={BlueprintLogo}
-                alt="Blueprint"
-                width={200}
-                height={200}
-                className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
-              />
-            </a>
-            <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">
-              <div className="flex justify-center">
-                <FaNodeJs className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <SiTypescript className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <GrGraphQl className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <DiPostgresql className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "Engineering Intern",
-      company: "All Equip",
-      date: "Jan - Apr 2024",
-      content: (
-        <div className="flex flex-col gap-4 sm:gap-6">
-          <div className="flex flex-col w-full">
-            <p className="text-neutral-200 text-sm sm:text-base font-normal mb-4 sm:mb-8 leading-7">
-              Developed full stack applications to digitize manufacturing
-              processes, including quality inspection, progress oversight, and
-              material stock management.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
-            <a
-              href="https://www.allequiprepair.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="z-50 inline-block transition-transform duration-300 origin-center hover:scale-y-105"
-            >
-              <Image
-                src={PlatinumLogo}
-                alt="PlatinumTrailers"
-                width={200}
-                height={200}
-                className="z-[49] rounded-lg hover:border-4 hover:border-[#33AFFF] w-full max-w-[200px] mx-auto"
-              />
-            </a>
-            <div className="grid grid-cols-2 gap-4 w-full sm:w-1/2 items-center">
-              <div className="flex justify-center">
-                <RiNextjsLine className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <SiMongodb className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <FaNodeJs className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-              <div className="flex justify-center">
-                <FaFigma className="text-4xl sm:text-6xl text-[#33AFFF]" />
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-  ];
   return (
-    <div
-      id="experience"
-      className="px-4 sm:px-8 md:px-16 lg:px-40 pt-16 sm:pt-24 md:pt-32 w-full relative flex flex-col items-start justify-start"
-    >
-      <h1 className="text-2xl sm:text-3xl md:text-4xl relative z-20 text-[#33AFFF]">
-        Experience
-      </h1>
-      <h3 className="text-base sm:text-lg text-white pt-2 sm:pt-4 pb-8">
-        places where i&apos;ve gained invaluable knowledge
-      </h3>
-      <Timeline data={data} />
-    </div>
+    <section id="experience" style={{ padding: "100px 0" }}>
+      <SectionHeader num="02" label="Experience" title="Where I've been" />
+      <div className="flex flex-col">
+        {experience.map((e, i) => (
+          <a
+            key={i}
+            href={e.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col md:grid md:grid-cols-[160px_1fr_auto] gap-2 md:gap-8 items-start no-underline text-inherit border-t border-[var(--line)] transition-colors duration-150 hover:bg-[var(--surface)] py-7 px-1"
+          >
+            <div
+              className="pt-0 md:pt-[5px]"
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: 11,
+                color: "var(--muted)",
+                letterSpacing: ".06em",
+              }}
+            >
+              {e.date}
+            </div>
+            <div>
+              <div className="flex items-center gap-3.5 mb-1.5">
+                <Image
+                  src={e.logo}
+                  alt={e.company}
+                  width={80}
+                  height={18}
+                  className="h-[18px] w-auto max-w-[80px] object-contain opacity-[0.85]"
+                  style={{ filter: "saturate(0) brightness(1.2) invert(0.85)" }}
+                />
+                <span
+                  className="italic"
+                  style={{
+                    fontFamily: "var(--font-main)",
+                    fontSize: 20,
+                    color: "var(--ink)",
+                  }}
+                >
+                  {e.company}
+                </span>
+              </div>
+              <div
+                className="mb-2"
+                style={{
+                  fontFamily: "var(--font-main)",
+                  fontSize: 20,
+                  color: "var(--ink)",
+                  fontWeight: 500,
+                  letterSpacing: "-.015em",
+                }}
+              >
+                {e.role}
+              </div>
+              <div
+                className="max-w-[560px]"
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 12.5,
+                  color: "var(--muted)",
+                  lineHeight: 1.65,
+                }}
+              >
+                {e.line}
+              </div>
+              <div className="flex gap-1.5 flex-wrap mt-3.5">
+                {e.stack.map((s) => (
+                  <span
+                    key={s}
+                    className="border border-[var(--line)] rounded-full"
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: 10.5,
+                      color: "var(--muted)",
+                      padding: "3px 9px",
+                      letterSpacing: ".02em",
+                    }}
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="text-[var(--muted)] pt-1.5 hidden md:block">
+              <ArrowIcon />
+            </div>
+          </a>
+        ))}
+        <div className="border-t border-[var(--line)]" />
+      </div>
+    </section>
   );
 };
