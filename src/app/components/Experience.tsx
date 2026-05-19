@@ -1,16 +1,38 @@
 import Image from "next/image";
-import MartinreaLogo from "@/public/martinrealogo.png";
-import BlueprintLogo from "@/public/blueprintlogo.png";
-import PlatinumLogo from "@/public/platinumlogo.png";
+import type { StaticImageData } from "next/image";
+import MartinreaLogo from "@/public/martinrea-icon.png";
+import BlueprintLogo from "@/public/blueprint-icon.png";
 import UntilLabsLogo from "@/public/untillabslogo.png";
-import HuaweiLogo from "@/public/huawei.png";
-import { StaticImageData } from "next/image";
+import HuaweiLogo from "@/public/huawei-icon.png";
+
+function CompanyLogo({
+  src,
+  alt,
+  imageClassName = "object-cover object-center",
+}: {
+  src: StaticImageData;
+  alt: string;
+  imageClassName?: string;
+}) {
+  return (
+    <span className="relative inline-flex h-6 w-6 shrink-0 overflow-hidden rounded-full bg-neutral-800">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="24px"
+        className={imageClassName}
+      />
+    </span>
+  );
+}
 
 const experiences: {
   company: string;
   title: string;
   date: string;
   logo: StaticImageData;
+  logoImageClassName?: string;
   logoLink: string;
   description: string;
 }[] = [
@@ -20,13 +42,14 @@ const experiences: {
     date: "Jan - May 2026",
     logo: UntilLabsLogo,
     logoLink: "https://www.untillabs.com/",
-    description: "Data platform for freezing organs.",
+    description: "Data infrastructure behind pausing biological time. ",
   },
   {
     company: "Huawei",
     title: "Software Engineer Intern",
     date: "May - Aug 2025",
     logo: HuaweiLogo,
+    logoImageClassName: "object-cover object-[center_30%]",
     logoLink: "https://www.huawei.com/en/",
     description: "Dynamic identity authentication for all mobile devices.",
   },
@@ -40,22 +63,13 @@ const experiences: {
       "Built a business intelligence tool and universal PLC communication app for 50+ global plants.",
   },
   {
-    company: "UW Blueprint",
+    company: "Blueprint",
     title: "Technical Software Lead",
     date: "Sep 2024 - Present",
     logo: BlueprintLogo,
     logoLink: "https://www.uwblueprint.org",
     description:
       "Building tech for non-profits, including a management system for 10,000+ volunteers at a sustainability npo.",
-  },
-  {
-    company: "All Equip",
-    title: "Engineering Intern",
-    date: "Jan - Apr 2024",
-    logo: PlatinumLogo,
-    logoLink: "https://www.allequiprepair.ca/",
-    description:
-      "Digitized qc, progress tracking, and material stock management with full-stack apps",
   },
 ];
 
@@ -80,22 +94,20 @@ export const Experience = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 group w-fit"
                 >
-                  <Image
+                  <CompanyLogo
                     src={exp.logo}
                     alt={exp.company}
-                    width={24}
-                    height={24}
-                    className="rounded-full w-6 h-6 object-contain bg-neutral-800 p-0.5"
+                    imageClassName={exp.logoImageClassName}
                   />
-                  <span className="text-neutral-300 text-sm group-hover:text-[#10b981] transition-colors">
+                  <span className="text-neutral-100 text-base sm:text-lg font-semibold group-hover:text-[#10b981] transition-colors">
                     {exp.company}
                   </span>
                 </a>
-                <h3 className="text-base sm:text-lg font-semibold text-neutral-100">
-                  {exp.title}
-                </h3>
+                <h3 className="text-sm text-neutral-400">{exp.title}</h3>
               </div>
-              <span className="text-sm text-neutral-500 sm:pt-0.5 shrink-0">{exp.date}</span>
+              <span className="text-sm text-neutral-500 sm:pt-0.5 shrink-0">
+                {exp.date}
+              </span>
             </div>
             <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">
               {exp.description}
