@@ -12,47 +12,47 @@ export function Projects() {
 
 export const projects = [
   {
+    title: "Mini-Spec-IR",
+    description:
+      "Inference runtime built from scratch",
+    skills: "Pytorch, Python",
+      link: "https://github.com/PranavGopinath/mini-spec-ir",
+  },
+  {
     title: "Transfermation",
     description:
-      "A machine learning powered prediction mechanism for determining the impact of football transfers ⚽",
-    skills: "Python, Scikit-learn, Next.js, FastAPI",
+      "An ML prediction engine for football transfer impact ⚽",
+    skills: "Python, Scikit-learn, XGBoost",
       link: "https://transfermation.vercel.app",
   },
   {
     title: "Spectra",
     description:
-      "A centralized hub for your creative side, with personalized recs 📺",
-    skills: "Python, all-MiniLM-L6-v2, Typescript, Next.js, FastAPI",
+      "A hub for your creative side, with personalized recs 📺",
+    skills: "Python, Typescript, Next.js, FastAPI",
     link: "https://spectra-ebon.vercel.app",
   },
   {
     title: "Kaizen Journal",
     description:
-      "A digital adaptation of the kaizen journal, designed to improve journalling experience 📘",
+      "A digital version of the kaizen journal 📘",
     skills:
-    "Expo, React Native, Node.js, Supabase, Tailwind",
+    "React Native, Node.js, Supabase",
     link: "https://github.com/PranavGopinath/kaizen_journal",
   },
   {
     title: "TD Product Roadmap",
     description:
-      "Placed 2nd overall at ProdCon 2024, UW PM's Product Management case competition 💡",
+      "2nd place at ProdCon, UW PM's case competition 💡",
     skills: "Figma, Canva",
     link: "https://www.canva.com/design/DAGWT_gwqDw/fFQFIl1Lgz5zPF3H-IVB-Q/view?utm_content=DAGWT_gwqDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1714a84309",
   },
   {
     title: "Estate Eagle",
     description:
-      "A real-estate price forecasting app to stay on top of market trends 🏠",
-    skills: "Next.js, Typescript, Node.js, Express, Tailwind", 
+      "A real-estate price forecasting app 🏠",
+    skills: "Next.js, Typescript, Node.js, Express", 
       link: "https://github.com/PranavGopinath/Estate-Eagle",
-  },
-  {
-    title: "EduMe",
-    description:
-      "An educational assistant tailored for people with learning disabilities 📖",
-    skills: "Python, OpenAI API, Streamlit",
-      link: "https://github.com/PranavGopinath/edume-ai",
   },
   
 ];
