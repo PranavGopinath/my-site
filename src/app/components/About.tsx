@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const lines = [
-  "hey, welcome to my site!",
-  "i recently finished working as a swe intern at huawei where I worked on dynamic mobile auth.",
-  "i'm now in my 2b term of syde, learning about linear systems & signals, stats, mods, & more.",
+  "hey, i'm pranav!",
+  "i recently interned at until labs where I worked on the data platform for freezing organs.",
+  "i'm now in my 3a term of syde, learning about systems modeling, thermodynamics & more.",
   "i'm a lifelong puzzle solver, arsenal fan, and builder of things that matter to people.",
   "wondering how i can contribute to your team?",
   "take a look at my past "
