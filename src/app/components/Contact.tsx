@@ -14,7 +14,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="px-4 sm:px-8 md:px-16 lg:px-40 pb-20 sm:pb-32 md:pb-40 pt-32 sm:pt-48 md:pt-60 w-full relative flex flex-col items-start justify-start"
+      className="px-4 sm:px-8 md:px-16 lg:px-40 pb-16 sm:pb-20 md:pb-24 pt-32 sm:pt-40 md:pt-52 w-full relative flex flex-col items-start justify-start"
     >
       <h1 className="text-2xl sm:text-3xl md:text-4xl relative z-20 text-white">
         Looking to Collaborate?
@@ -27,7 +27,7 @@ export const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           color="secondary"
-          className="border-2 rounded-sm flex flex-row items-center gap-2 hover:border-[#33AFFF] hover:text-[#33AFFF] text-sm sm:text-base px-3 py-2"
+          className="border-2 rounded-sm flex flex-row items-center gap-2 hover:border-[#10b981] hover:text-[#10b981] text-sm sm:text-base px-3 py-2"
           aria-label="Compose mail"
         >
           Let&apos;s touch base
