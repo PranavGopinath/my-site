@@ -30,7 +30,7 @@ export function Hero() {
             href="https://www.sydewebring.site/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#33AFFF] hover:underline"
+            className="text-[#10b981] hover:underline"
           >
             Systems Design Engineer
           </a>

@@ -42,11 +42,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-start md:items-center top-20 md:top-32 self-start w-full md:max-w-xs lg:max-w-sm">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-neutral-900 flex items-center justify-center ring-1 ring-neutral-800">
-                <div className="h-4 w-4 rounded-full bg-[#33AFFF] border border-[#33AFFF]/60 p-1" />
+                <div className="h-4 w-4 rounded-full bg-[#10b981] border border-[#10b981]/60 p-1" />
               </div>
 
               <div className="h-10 w-10 absolute left-3 md:left-3 bg-neutral-900 flex items-center justify-center rounded-md ring-1 ring-neutral-800">
-                <div className="h-5 w-5 bg-[#1B8FDD] border border-[#33AFFF]/60 rounded-sm" />
+                <div className="h-5 w-5 bg-[#1B8FDD] border border-[#10b981]/60 rounded-sm" />
               </div>
 
               <div className="flex flex-col pl-16 md:pl-20">
