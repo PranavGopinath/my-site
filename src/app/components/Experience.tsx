@@ -2,6 +2,7 @@ import Image from "next/image";
 import MartinreaLogo from "@/public/martinrealogo.png";
 import BlueprintLogo from "@/public/blueprintlogo.png";
 import PlatinumLogo from "@/public/platinumlogo.png";
+import UntilLabsLogo from "@/public/untillabslogo.png";
 import HuaweiLogo from "@/public/huawei.png";
 import { StaticImageData } from "next/image";
 
@@ -13,6 +14,14 @@ const experiences: {
   logoLink: string;
   description: string;
 }[] = [
+  {
+    company: "Until Labs",
+    title: "Software Engineer Intern",
+    date: "Jan - May 2026",
+    logo: UntilLabsLogo,
+    logoLink: "https://www.untillabs.com/",
+    description: "Data platform for freezing organs.",
+  },
   {
     company: "Huawei",
     title: "Software Engineer Intern",
@@ -28,16 +37,16 @@ const experiences: {
     logo: MartinreaLogo,
     logoLink: "https://www.martinrea.com",
     description:
-      "Built a business intelligence tool and universal PLC communication app for 50+ teams across global manufacturing plants.",
+      "Built a business intelligence tool and universal PLC communication app for 50+ global plants.",
   },
   {
     company: "UW Blueprint",
-    title: "Software Developer + VP Project Scoping",
+    title: "Technical Software Lead",
     date: "Sep 2024 - Present",
     logo: BlueprintLogo,
     logoLink: "https://www.uwblueprint.org",
     description:
-      "Developed software for non-profits including a gamified task manager and a route generation app.",
+      "Building tech for non-profits, including a management system for 10,000+ volunteers at a sustainability npo.",
   },
   {
     company: "All Equip",
@@ -46,7 +55,7 @@ const experiences: {
     logo: PlatinumLogo,
     logoLink: "https://www.allequiprepair.ca/",
     description:
-      "Built full stack apps to digitize quality inspection, progress oversight, and material stock management.",
+      "Digitized qc, progress tracking, and material stock management with full-stack apps",
   },
 ];
 
