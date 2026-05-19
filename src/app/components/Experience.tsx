@@ -67,6 +67,7 @@ const experiences: {
     title: "Technical Software Lead",
     date: "Sep 2024 - Present",
     logo: BlueprintLogo,
+    logoImageClassName: "object-contain object-center scale-75",
     logoLink: "https://www.uwblueprint.org",
     description:
       "Building tech for non-profits, including a management system for 10,000+ volunteers at a sustainability npo.",
