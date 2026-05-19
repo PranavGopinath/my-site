@@ -50,7 +50,7 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-40 pt-12 sm:pt-16 md:pt-32 pb-10 md:pb-40 w-full max-w-full relative flex flex-col overflow-x-hidden"
+      className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-40 pt-12 sm:pt-16 md:pt-32 pb-8 w-full max-w-full relative flex flex-col overflow-x-hidden"
     >
       <div className="items-start justify-start space-y-2 sm:space-y-3 md:space-y-4 max-w-full">
         {lines.slice(0, stepIndex + 1).map((line, index) => (

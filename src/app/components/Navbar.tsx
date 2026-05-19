@@ -52,7 +52,7 @@ export const Navbar = () => {
           left: 50%;
           width: 0;
           height: 2px;
-          background-color: white;
+          background-color: #10b981;
           transition: all 0.3s ease-in-out;
           transform: translateX(-50%);
         }
