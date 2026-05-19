@@ -14,7 +14,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="px-4 sm:px-8 md:px-16 lg:px-40 pb-16 sm:pb-20 md:pb-24 pt-16 sm:pt-20 md:pt-24 w-full relative flex flex-col items-start justify-start"
+      className="px-4 sm:px-8 md:px-16 lg:px-40 pb-16 sm:pb-20 md:pb-24 pt-32 sm:pt-40 md:pt-52 w-full relative flex flex-col items-start justify-start"
     >
       <h1 className="text-2xl sm:text-3xl md:text-4xl relative z-20 text-white">
         Looking to Collaborate?
