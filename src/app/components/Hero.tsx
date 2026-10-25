@@ -3,6 +3,18 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowDown } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { PixelRevealGrid } from "./ui/pixel-reveal";
+import Coast from "@/public/gallery/coast.webp";
+import Stadium from "@/public/gallery/stadium.webp";
+import Photobooth from "@/public/gallery/photobooth.webp";
+import Trail from "@/public/gallery/trail.webp";
+
+const gallery = [
+  { src: Coast, alt: "Standing on a sea rock at sunset" },
+  { src: Stadium, alt: "Pitchside at a World Cup match" },
+  { src: Photobooth, alt: "Photo booth strip with friends" },
+  { src: Trail, alt: "Looking out over a valley on a hike" },
+];
 
 export function Hero() {
   const [didScroll, setDidScroll] = useState<boolean>(false);
@@ -59,6 +71,8 @@ export function Hero() {
           </a>
         </div>
       </div>
+
+      <PixelRevealGrid images={gallery} className="mt-10 sm:mt-12 mb-10" />
 
       <div
         className={cn(

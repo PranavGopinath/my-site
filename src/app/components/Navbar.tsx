@@ -63,15 +63,15 @@ export const Navbar = () => {
           transform: translateX(0%);
         }
       `}</style>
-      <div
-        className={cn(
-          "sticky top-0 z-50 h-16 w-full text-white",
-          didScroll
-            ? "bg-gradient-to-br from-transparent to-black backdrop-blur transition"
-            : "bg-transparent"
-        )}
-      >
-        <div className="w-full max-w-2xl mx-auto h-full flex items-center justify-between px-4 sm:px-6">
+      <div className="sticky top-0 z-50 h-16 w-full text-white">
+        <div
+          className={cn(
+            "w-full max-w-2xl mx-auto h-full flex items-center justify-between px-4 sm:px-6 border-b transition-colors duration-300",
+            didScroll
+              ? "bg-black/75 backdrop-blur-md border-neutral-800"
+              : "bg-transparent border-transparent"
+          )}
+        >
           <div className="flex items-center">
             <Image
               src="/favicon.ico"
