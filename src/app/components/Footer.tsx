@@ -4,7 +4,7 @@ import { Mail } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-center w-full px-4 sm:px-8 md:px-16 lg:px-36 py-4 sm:py-6 gap-4 sm:gap-0">
+    <div className="flex flex-col sm:flex-row justify-between items-center w-full py-6 border-t border-neutral-800 gap-4 sm:gap-0">
       <div className="flex items-center gap-4 sm:gap-6">
         <p className="text-white text-sm sm:text-base">Pranav Gopinath</p>
         <div className="flex gap-4">

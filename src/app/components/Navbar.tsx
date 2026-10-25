@@ -36,7 +36,7 @@ export const Navbar = () => {
       <style jsx>{`
         .nav-item {
           position: relative;
-          padding: 8px;
+          padding: 6px 2px;
           cursor: pointer;
         }
 
@@ -71,31 +71,31 @@ export const Navbar = () => {
             : "bg-transparent"
         )}
       >
-        <div className="w-full max-w-7xl mx-auto h-full flex items-center justify-between px-2 sm:px-4">
-          <div className="flex items-center -ml-2">
+        <div className="w-full max-w-2xl mx-auto h-full flex items-center justify-between px-4 sm:px-6">
+          <div className="flex items-center">
             <Image
               src="/favicon.ico"
               width={32}
               height={32}
-              className="h-8 w-8 cursor-pointer"
+              className="h-6 w-6 cursor-pointer"
               onClick={() => scrollToSection("home")}
               alt="Logo"
             />
           </div>
-          <nav className="flex items-center space-x-4 sm:space-x-6">
+          <nav className="flex items-center gap-2.5 sm:gap-6">
             <div className="nav-item">
-              <span onClick={() => scrollToSection("about")} className="text-sm sm:text-base">About</span>
+              <span onClick={() => scrollToSection("about")} className="text-sm">About</span>
             </div>
             <div className="nav-item">
-              <span onClick={() => scrollToSection("experience")} className="text-sm sm:text-base">
+              <span onClick={() => scrollToSection("experience")} className="text-sm">
                 Experience
               </span>
             </div>
             <div className="nav-item">
-              <span onClick={() => scrollToSection("projects")} className="text-sm sm:text-base">Projects</span>
+              <span onClick={() => scrollToSection("projects")} className="text-sm">Projects</span>
             </div>
             <div className="nav-item">
-              <span onClick={() => scrollToSection("contact")} className="text-sm sm:text-base">Contact</span>
+              <span onClick={() => scrollToSection("contact")} className="text-sm">Contact</span>
             </div>
           </nav>
         </div>
