@@ -3,8 +3,6 @@ import {useEffect, useState} from 'react'
 import {Hero} from "./components/Hero";
 import {About} from "./components/About";
 import {Projects} from './components/Projects'
-import { ShootingStars } from "./components/ui/shooting-stars";
-import { StarsBackground } from "./components/ui/stars-background";
 import {Navbar } from "./components/Navbar"
 import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
@@ -29,17 +27,15 @@ export default function Home() {
   }
   return (
     <div className="bg-black min-h-screen relative">
-      <ShootingStars />
-      <StarsBackground />
       <Navbar />
-      <div className="flex flex-col items-center relative">
+      <main className="mx-auto w-full max-w-2xl px-4 sm:px-6 flex flex-col relative">
         <Hero />
         <About />
         <Experience />
         <Projects />
         <Contact />
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }

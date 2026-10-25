@@ -21,7 +21,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 py-8 sm:py-10 px-2 sm:px-4",
+        "grid grid-cols-1 sm:grid-cols-2 gap-1 py-6 -mx-[13px] w-[calc(100%+26px)]",
         className
       )}
     >
@@ -32,11 +32,11 @@ export const HoverEffect = ({
         key={item?.link}
           target="_blank"
         rel="noopener noreferrer"
-        className="relative group block p-1 sm:p-2 w-full"
+        className="relative group block w-full"
         onMouseEnter={() => setHoveredIndex(idx)}
         onMouseLeave={() => setHoveredIndex(null)}
       >
-          <div className="relative w-full p-2 sm:p-3 rounded-xl">
+          <div className="relative w-full p-px rounded-xl">
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
@@ -57,8 +57,8 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
-              <div className="mt-4">
-            <CardDescription>{item?.skills}</CardDescription>
+              <div className="mt-3">
+            <CardDescription className="font-mono text-xs text-zinc-500">{item?.skills}</CardDescription>
               </div>
           </Card>
         </div>
@@ -78,12 +78,12 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "relative z-20 w-full overflow-hidden rounded-xl border border-transparent bg-black p-3 sm:p-5 group-hover:border-[#10b981]/50 transition-all duration-300",
+        "relative z-20 w-full overflow-hidden rounded-xl border border-transparent bg-black p-3 group-hover:border-[#10b981]/50 transition-all duration-300",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-1 sm:p-3">{children}</div>
+        <div>{children}</div>
       </div>
     </div>
   );
@@ -97,7 +97,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-lg sm:text-lg w-full md:text-2xl font-bold tracking-wide text-white mb-2 sm:mb-4", className)}>
+    <h4 className={cn("text-base w-full font-medium text-white", className)}>
       {children}
     </h4>
   );
@@ -113,7 +113,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-2 sm:mt-4 w-full text-sm sm:text-base text-zinc-400 tracking-wide leading-relaxed",
+        "mt-1 w-full text-sm text-zinc-400 leading-relaxed",
         className
       )}
     >

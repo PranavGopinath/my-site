@@ -1,8 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-// import { WavyBackground } from "./ui/wavy-background";
 import { cn } from "@/lib/utils";
-import { ChevronsDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Hero() {
@@ -20,49 +19,55 @@ export function Hero() {
   }, []);
 
   return (
-    <div id="home" className="relative w-full">
-      <div className="w-full max-w-screen-xl mx-auto px-4 flex flex-col items-center">
-        <p className="text-2xl md:text-4xl lg:text-7xl text-white text-center pt-60">
+    <div
+      id="home"
+      className="relative w-full min-h-[calc(100svh-4rem)] pt-32 sm:pt-40 md:pt-48 pb-12 flex flex-col justify-between"
+    >
+      <div className="flex flex-col gap-3 max-w-xl">
+        <h1 className="text-2xl sm:text-3xl text-white tracking-tight">
           Pranav Gopinath
-        </p>
-        <p className="text-base md:text-lg mt-4 text-white text-center pb-4">
+        </h1>
+        <p className="text-sm sm:text-base text-neutral-400 leading-relaxed">
           <a
             href="https://www.sydewebring.site/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#10b981] hover:underline"
+            className="text-[#10b981] hover:underline underline-offset-4"
           >
             Systems Design Engineer
           </a>
           &nbsp;at Waterloo
         </p>
-        <div className="text-center gap-6 flex justify-center mb-20">
+        <div className="flex items-center gap-4 pt-1">
           <a
             href="https://www.linkedin.com/in/pranavgo/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 transform hover:scale-125"
+            aria-label="LinkedIn"
+            className="text-neutral-400 hover:text-[#10b981] transition-colors"
           >
-            <FaLinkedin className="text-lg text-white" />
+            <FaLinkedin className="text-base" />
           </a>
           <a
             href="https://www.github.com/PranavGopinath"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform duration-300 transform hover:scale-125"
+            aria-label="GitHub"
+            className="text-neutral-400 hover:text-[#10b981] transition-colors"
           >
-            <FaGithub className="text-lg text-white" />
+            <FaGithub className="text-base" />
           </a>
         </div>
-        <div
-          className={cn(
-            "flex justify-center flex-grow-0 flex-col items-center gap-2",
-            didScroll && "opacity-0 transition duration-300"
-          )}
-        >
-          <h3 className="text-white">Dive in</h3>
-          <ChevronsDown className="text-2xl text-white animate-bounce" />
-        </div>
+      </div>
+
+      <div
+        className={cn(
+          "flex items-center gap-2 text-xs text-neutral-500 transition-opacity duration-300",
+          didScroll && "opacity-0"
+        )}
+      >
+        <ArrowDown className="w-3.5 h-3.5 animate-bounce" />
+        <span>scroll</span>
       </div>
     </div>
   );

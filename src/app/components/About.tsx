@@ -5,10 +5,9 @@ import Link from "next/link";
 
 const lines = [
   "hey, i'm pranav!",
-  "i recently worked at until labs, on the data platform for freezing organs.",
-  "i'm now in my 3a term of syde, learning about systems modeling, thermo & more.",
+  "i'm currently working at until labs, on the data platform for cryopreserving organs.",
+  "i just wrapped up my 3a term of syde, where i learned about systems modeling, thermo & more.",
   "i'm a puzzle solver, arsenal fan, and builder of things that matter to people.",
-  "wondering how i can contribute to your team?",
   "take a look at my past "
 ];
 
@@ -50,14 +49,14 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="px-4 sm:px-8 md:px-16 lg:px-40 pt-12 sm:pt-16 md:pt-32 pb-16 sm:pb-20 w-full max-w-full relative flex flex-col overflow-x-hidden"
+      className="pt-12 sm:pt-16 pb-8 w-full max-w-full relative flex flex-col overflow-x-hidden"
     >
       <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 max-w-full">
         <div className="flex flex-col gap-2 sm:gap-3 md:gap-4">
         {lines.slice(0, stepIndex + 1).map((line, index) => (
           <div key={index} className={cn(
-            "text-white text-sm sm:text-base md:text-lg lg:text-xl break-words", 
-            index === 0 && "text-[#10b981] text-lg sm:text-xl md:text-2xl lg:text-4xl"
+            "text-neutral-300 text-base leading-relaxed break-words", 
+            index === 0 && "text-[#10b981] text-xl sm:text-2xl"
           )}>
             {index === lines.length - 1 ? (
               <div className="inline-flex items-center flex-wrap gap-2">

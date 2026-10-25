@@ -2,9 +2,9 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export function Projects() {
   return (
-    <div className="px-4 sm:px-8 md:px-16 lg:px-40 pt-32 sm:pt-40 md:pt-52 w-full">
-      <h1 id="projects" className='text-[#10b981] text-2xl sm:text-3xl md:text-4xl'>Projects</h1>
-      <h3 className='text-white text-base sm:text-lg pt-2 sm:pt-4'>cool things i&apos;ve worked on in my spare time </h3>
+    <div id="projects" className="pt-24 sm:pt-32 w-full">
+      <h1 className='text-[#10b981] text-xl sm:text-2xl font-medium tracking-tight'>Projects</h1>
+      <h3 className='text-neutral-400 text-sm sm:text-base pt-2'>cool things i&apos;ve worked on in my spare time </h3>
       <HoverEffect items={projects} />
     </div>
   );
@@ -12,11 +12,18 @@ export function Projects() {
 
 export const projects = [
   {
-    title: "Mini-Spec-IR",
+    title: "Spectra",
     description:
-      "Inference runtime built from scratch",
-    skills: "Pytorch, Python",
-      link: "https://github.com/PranavGopinath/mini-spec-ir",
+      "A hub for your creative side, with personalized recs 📺",
+    skills: "Python, Typescript, Next.js, FastAPI",
+    link: "https://spectra-ebon.vercel.app",
+  },
+  {
+    title: "Gladiator",
+    description:
+      "An arena where AI models fight it out ⚔️",
+    skills: "Python, Docker, JavaScript, Supabase",
+    link: "https://github.com/PranavGopinath/gladiator",
   },
   {
     title: "Transfermation",
@@ -24,13 +31,6 @@ export const projects = [
       "An ML prediction engine for football transfer impact ⚽",
     skills: "Python, Scikit-learn, XGBoost",
       link: "https://transfermation.vercel.app",
-  },
-  {
-    title: "Spectra",
-    description:
-      "A hub for your creative side, with personalized recs 📺",
-    skills: "Python, Typescript, Next.js, FastAPI",
-    link: "https://spectra-ebon.vercel.app",
   },
   {
     title: "Kaizen Journal",
