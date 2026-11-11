@@ -90,12 +90,21 @@ function AsciiCanvas({ src }: { src: StaticImageData }) {
   return <canvas ref={ref} aria-hidden className="absolute inset-0 h-full w-full" />;
 }
 
-function FlipTile({ src, alt }: { src: StaticImageData; alt: string }) {
-  const [flipped, setFlipped] = useState(false);
+function FlipTile({
+  src,
+  alt,
+  flipped,
+  onToggle,
+}: {
+  src: StaticImageData;
+  alt: string;
+  flipped: boolean;
+  onToggle: () => void;
+}) {
   return (
     <button
       type="button"
-      onClick={() => setFlipped((f) => !f)}
+      onClick={onToggle}
       aria-pressed={flipped}
       aria-label={`${alt}. ${flipped ? "Showing photo, click for ascii" : "Showing ascii, click for photo"}`}
       title={flipped ? "click for ascii" : "click for photo"}
@@ -112,6 +121,29 @@ function FlipTile({ src, alt }: { src: StaticImageData; alt: string }) {
   );
 }
 
+const ROW = 4; // tiles per row on desktop
+
+/**
+ * Picks 2 or 3 tiles to start as photos: at least one from each row of four,
+ * plus an optional extra from anywhere else.
+ */
+function pickFaceUp(count: number): Set<number> {
+  const rand = (n: number) => Math.floor(Math.random() * n);
+  const rows = Math.ceil(count / ROW);
+  const picked = new Set<number>();
+  for (let r = 0; r < rows; r++) {
+    const start = r * ROW;
+    const size = Math.min(ROW, count - start);
+    picked.add(start + rand(size));
+  }
+  if (Math.random() < 0.5 && picked.size < count) {
+    let extra = rand(count);
+    while (picked.has(extra)) extra = rand(count);
+    picked.add(extra);
+  }
+  return picked;
+}
+
 /** Photos drawn as green ascii; click a tile to swap to the real photo and back. */
 export function AsciiPhotoGrid({
   images,
@@ -120,11 +152,21 @@ export function AsciiPhotoGrid({
   images: { src: StaticImageData; alt: string }[];
   className?: string;
 }) {
+  const [faceUp, setFaceUp] = useState<boolean[]>(() => images.map(() => false));
+
+  // Randomize after mount so server and client render the same markup first.
+  useEffect(() => {
+    const picked = pickFaceUp(images.length);
+    setFaceUp(images.map((_, i) => picked.has(i)));
+  }, [images]);
+
+  const toggle = (i: number) => setFaceUp((prev) => prev.map((v, k) => (k === i ? !v : v)));
+
   return (
     <div className={className}>
       <div className="grid w-full grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
-        {images.map((img) => (
-          <FlipTile key={img.alt} src={img.src} alt={img.alt} />
+        {images.map((img, i) => (
+          <FlipTile key={img.alt} src={img.src} alt={img.alt} flipped={faceUp[i]} onToggle={() => toggle(i)} />
         ))}
       </div>
     </div>
