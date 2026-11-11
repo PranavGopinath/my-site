@@ -47,7 +47,7 @@ export function ConstellationCursor() {
     setUserOn(next);
     writePref(next);
     if (announce) {
-      setToast(next ? "cursor effect on" : "cursor effect off");
+      setToast(next ? "galileo mode on" : "galileo mode off");
       clearTimeout(toastTimer.current);
       toastTimer.current = setTimeout(() => setToast(null), 1400);
     }
@@ -223,8 +223,8 @@ export function ConstellationCursor() {
             type="button"
             onClick={() => toggle(false)}
             aria-pressed={userOn}
-            aria-label={`Cursor effect ${userOn ? "on" : "off"}. Toggle with ${shortcut}`}
-            title={`cursor effect (${shortcut})`}
+            aria-label={`Galileo mode ${userOn ? "on" : "off"}. Toggle with ${shortcut}`}
+            title={`galileo mode (${shortcut})`}
             className="group flex h-8 items-center rounded-full border border-neutral-800 bg-black/70 px-2.5 font-mono text-[11px] text-neutral-500 backdrop-blur transition-colors hover:border-neutral-600 hover:text-neutral-300"
           >
             <svg viewBox="0 0 16 16" className={`h-3.5 w-3.5 transition-colors ${userOn ? "text-[#10b981]" : "text-neutral-600"}`} aria-hidden>
@@ -234,7 +234,7 @@ export function ConstellationCursor() {
               ))}
             </svg>
             <span className="hidden max-w-0 overflow-hidden whitespace-nowrap transition-all duration-300 group-hover:ml-2 group-hover:max-w-[12rem] group-focus-visible:ml-2 group-focus-visible:max-w-[12rem] sm:inline-block">
-              cursor effect {userOn ? "on" : "off"}
+              galileo mode {userOn ? "on" : "off"}
               <kbd className="ml-2 rounded border border-neutral-700 px-1 py-px text-neutral-400">{shortcut}</kbd>
             </span>
           </button>
