@@ -3,16 +3,24 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowDown } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { PixelRevealGrid } from "./ui/pixel-reveal";
+import { AsciiPhotoGrid } from "./ui/ascii-photo-grid";
 import Coast from "@/public/gallery/coast.webp";
 import Stadium from "@/public/gallery/stadium.webp";
-import Photobooth from "@/public/gallery/photobooth.webp";
+import Jerseys from "@/public/gallery/jerseys.webp";
 import Trail from "@/public/gallery/trail.webp";
+import Tree from "@/public/gallery/tree.webp";
+import Library from "@/public/gallery/library.webp";
+import Ski from "@/public/gallery/ski.webp";
+import Valley from "@/public/gallery/valley.webp";
 
 const gallery = [
+  { src: Valley, alt: "Hiking selfie above a valley" },
   { src: Coast, alt: "Standing on a sea rock at sunset" },
+  { src: Library, alt: "Reading in the library stacks with friends" },
   { src: Stadium, alt: "Pitchside at a World Cup match" },
-  { src: Photobooth, alt: "Photo booth strip with friends" },
+  { src: Tree, alt: "Sitting on a tree branch" },
+  { src: Jerseys, alt: "Three friends in basketball and football jerseys" },
+  { src: Ski, alt: "Ski selfie at the top of a run" },
   { src: Trail, alt: "Looking out over a valley on a hike" },
 ];
 
@@ -72,7 +80,7 @@ export function Hero() {
         </div>
       </div>
 
-      <PixelRevealGrid images={gallery} className="mt-10 sm:mt-12 mb-10" />
+      <AsciiPhotoGrid images={gallery} className="mt-10 sm:mt-12 mb-10" />
 
       <div
         className={cn(

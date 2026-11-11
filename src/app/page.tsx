@@ -8,6 +8,7 @@ import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
 import {Footer } from './components/Footer'
 import './components/Loading.css'
+import { ConstellationCursor } from "./components/ui/constellation-cursor";
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -27,6 +28,7 @@ export default function Home() {
   }
   return (
     <div className="bg-black min-h-screen relative">
+      <ConstellationCursor />
       <Navbar />
       <main className="mx-auto w-full max-w-2xl px-4 sm:px-6 flex flex-col relative">
         <Hero />
