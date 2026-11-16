@@ -27,7 +27,8 @@ export const Contact = () => {
           target="_blank"
           rel="noopener noreferrer"
           color="secondary"
-          className="border-2 rounded-sm flex flex-row items-center gap-2 hover:border-[#10b981] hover:text-[#10b981] text-sm sm:text-base px-3 py-2"
+          radius="none"
+          className="border-2 rounded-none flex flex-row items-center gap-2 hover:border-[#10b981] hover:text-[#10b981] text-sm sm:text-base px-3 py-2"
           aria-label="Compose mail"
         >
           Let&apos;s touch base
