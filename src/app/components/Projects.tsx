@@ -19,11 +19,11 @@ export const projects = [
     link: "https://spectra-ebon.vercel.app",
   },
   {
-    title: "Gladiator",
+    title: "Tiers",
     description:
-      "An arena where AI models fight it out ⚔️",
-    skills: "Python, Docker, JavaScript, Supabase",
-    link: "https://github.com/PranavGopinath/gladiator",
+      "A multi-agent feedback loop to render, judge, and repair 3D worlds 🌍",
+    skills: "TypeScript, Gemini API, Three.js, Vite",
+    link: "https://tiers-alpha.vercel.app",
   },
   {
     title: "Transfermation",
@@ -48,11 +48,11 @@ export const projects = [
     link: "https://www.canva.com/design/DAGWT_gwqDw/fFQFIl1Lgz5zPF3H-IVB-Q/view?utm_content=DAGWT_gwqDw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1714a84309",
   },
   {
-    title: "Estate Eagle",
+    title: "Gladiator",
     description:
-      "A real-estate price forecasting app 🏠",
-    skills: "Next.js, Typescript, Node.js, Express", 
-      link: "https://github.com/PranavGopinath/Estate-Eagle",
+      "An arena where AI models fight it out ⚔️",
+    skills: "Python, Docker, JavaScript, Supabase",
+    link: "https://github.com/PranavGopinath/gladiator",
   },
   
 ];

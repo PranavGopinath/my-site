@@ -36,7 +36,7 @@ export const Footer = () => {
           <Button 
             size="sm" 
             color="secondary" 
-            className="px-2 py-1 border-2 hover:border-[#10b981] rounded-sm flex flex-row items-center gap-2 hover:text-[#10b981] text-sm sm:text-base"
+            className="px-2 py-1 border-2 hover:border-[#10b981] rounded-none flex flex-row items-center gap-2 hover:text-[#10b981] text-sm sm:text-base"
           >
             <Mail className="text-sm sm:text-base hover:text-[#10b981]"/>
             <span className="hidden sm:inline">p3gopina@uwaterloo.ca</span>
